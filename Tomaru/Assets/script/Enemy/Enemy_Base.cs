@@ -38,7 +38,7 @@ public class Enemy_Base : MonoBehaviour
             StartCoroutine(DeathRoutine());
     }
 
-    void ApplyKnockback(Transform attacker)
+    protected void ApplyKnockback(Transform attacker)
     {
         Vector2 direction = ((Vector2)transform.position - (Vector2)attacker.position).normalized;
         rb.linearVelocity = Vector2.zero;
