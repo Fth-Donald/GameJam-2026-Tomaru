@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyBase : MonoBehaviour
+public class Enemy_Base : MonoBehaviour
 {
     [Header("Basic Stats")]
     public float moveSpeed = 2f;

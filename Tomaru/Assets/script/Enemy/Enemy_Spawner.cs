@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class Enemy_Spawner : MonoBehaviour
 {
     [Header("Spawn Range")]
     public float minSpawnRadius = 8f;

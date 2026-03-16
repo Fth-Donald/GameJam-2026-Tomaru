@@ -400,8 +400,10 @@ GameObject:
   - component: {fileID: 1305430311}
   - component: {fileID: 1305430310}
   - component: {fileID: 1305430307}
+  - component: {fileID: 1305430312}
+  - component: {fileID: 1305430313}
   m_Layer: 0
-  m_Name: Stop&Shoot_Type
+  m_Name: Type_Stop&Shoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -555,6 +557,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1305430312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305430306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef098dc508ed6e74ebc82598449ebe9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1963537888770040043, guid: 3d60d9de70167f8488b51bc80d27482d, type: 3}
+  shootInterval: 1.5
+  bulletSpeed: 6
+--- !u!114 &1305430313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305430306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21710839f0a3d8443ac6b8e645d15c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 3
+  knockbackForce: 6
+  deathDelay: 0.3
 --- !u!1 &1998229076
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,8 +600,9 @@ GameObject:
   - component: {fileID: 1998229081}
   - component: {fileID: 1998229077}
   - component: {fileID: 1998229080}
+  - component: {fileID: 1998229082}
   m_Layer: 0
-  m_Name: Chase_Type
+  m_Name: Type_Chase
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -721,6 +754,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1998229082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998229076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21710839f0a3d8443ac6b8e645d15c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 3
+  knockbackForce: 6
+  deathDelay: 0.3
 --- !u!1 &2007701346
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +783,7 @@ GameObject:
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -851,7 +899,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 1025201012}
   - {fileID: 2007701348}
   - {fileID: 1998229079}
-  - {fileID: 1025201012}
   - {fileID: 1305430309}

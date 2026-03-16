@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyFollow : MonoBehaviour
+public class Enemy_Chase : MonoBehaviour
 {
 
     public float moveSpeed = 2.0f;
