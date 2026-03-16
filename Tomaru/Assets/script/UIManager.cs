@@ -8,10 +8,14 @@ public class UIManager: MonoBehaviour
 
 
     ///////////////////StartButton//////////////////
-    public void GoToSelectScene()
+    public void GoToGameScene()
     {
-        SceneManager.LoadScene("SelectScene");
+        SceneManager.LoadScene("GameScene");
     }
+    //public void GoToSelectScene()
+    //{
+    //    SceneManager.LoadScene("SelectScene");
+    //}
 
     //////////////////QuitButton/////////////////////////
     public void QuitGame()
@@ -21,17 +25,17 @@ public class UIManager: MonoBehaviour
 
 
     /////////////////////StageSelectButton///////////////
-    public void GoToStage1_1()
-    {
-        SceneManager.LoadScene("Stage1-1"); 
-    }
-    public void GoToStage1_2()
-    {
-        SceneManager.LoadScene("Stage1-2");
-    }
-    public void GoToStage1_3()
-    {
-        SceneManager.LoadScene("Stage1-3");
-    }
+    //public void GoToStage1_1()
+    //{
+    //    SceneManager.LoadScene("Stage1-1"); 
+    //}
+    //public void GoToStage1_2()
+    //{
+    //    SceneManager.LoadScene("Stage1-2");
+    //}
+    //public void GoToStage1_3()
+    //{
+    //    SceneManager.LoadScene("Stage1-3");
+    //}
     
 }

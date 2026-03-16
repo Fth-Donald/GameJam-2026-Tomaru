@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 ///////////////////Pause////////////////////
@@ -7,16 +7,58 @@ public class PauseManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     ///////////////////InputAction////////////////////
+    ///
     public InputActionReference pauseAction;
 
+    public GameObject pauseMenu;
+
+    private bool isPaused = false;
+
     ///////////////////PauseRefernce////////////////////
+    void Start()
+    {
+        pauseMenu.SetActive(false);
+    }
     void OnEnable()
     {
         pauseAction.action.performed += OnPause;
     }
 
-    void OnPause(InputAction.CallbackContext context)
+    void OnDisable()
     {
-        Debug.Log("ESC pressed");
+        pauseAction.action.performed -= OnPause;
     }
+
+     void OnPause(InputAction.CallbackContext context)
+    {
+        isPaused = !isPaused;
+
+
+        if (isPaused)
+        {
+            
+            PauseGame();
+        }
+        else
+        {
+            ResumeGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+        pauseMenu.SetActive(true);
+        Debug.Log("pause");
+    }
+    public void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        pauseMenu.SetActive(false);
+        Debug.Log("resume");
+    }
+
 }
+
