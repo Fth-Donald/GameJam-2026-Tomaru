@@ -399,9 +399,9 @@ GameObject:
   - component: {fileID: 1305430308}
   - component: {fileID: 1305430311}
   - component: {fileID: 1305430310}
+  - component: {fileID: 1305430313}
   - component: {fileID: 1305430307}
   - component: {fileID: 1305430312}
-  - component: {fileID: 1305430313}
   m_Layer: 0
   m_Name: Type_Stop&Shoot
   m_TagString: Untagged
@@ -422,8 +422,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  maxHP: 3
+  contactDamage: 1
+  knockbackForce: 6
+  deathDelay: 0.3
   stopRange: 5
-  player: {fileID: 0}
 --- !u!212 &1305430308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -569,6 +572,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef098dc508ed6e74ebc82598449ebe9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 2
+  maxHP: 3
+  contactDamage: 1
+  knockbackForce: 6
+  deathDelay: 0.3
   bulletPrefab: {fileID: 1963537888770040043, guid: 3d60d9de70167f8488b51bc80d27482d, type: 3}
   shootInterval: 1.5
   bulletSpeed: 6
@@ -581,10 +589,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1305430306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21710839f0a3d8443ac6b8e645d15c08, type: 3}
+  m_Script: {fileID: 11500000, guid: a21a41cdc0ea8f44c9a2adeacd366e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 2
   maxHP: 3
+  contactDamage: 1
   knockbackForce: 6
   deathDelay: 0.3
 --- !u!1 &1998229076
@@ -599,8 +609,8 @@ GameObject:
   - component: {fileID: 1998229078}
   - component: {fileID: 1998229081}
   - component: {fileID: 1998229077}
-  - component: {fileID: 1998229080}
   - component: {fileID: 1998229082}
+  - component: {fileID: 1998229080}
   m_Layer: 0
   m_Name: Type_Chase
   m_TagString: Enemy
@@ -727,6 +737,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  maxHP: 3
+  contactDamage: 1
+  knockbackForce: 6
+  deathDelay: 0.3
 --- !u!50 &1998229081
 Rigidbody2D:
   serializedVersion: 5
@@ -763,10 +777,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1998229076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21710839f0a3d8443ac6b8e645d15c08, type: 3}
+  m_Script: {fileID: 11500000, guid: a21a41cdc0ea8f44c9a2adeacd366e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 2
   maxHP: 3
+  contactDamage: 1
   knockbackForce: 6
   deathDelay: 0.3
 --- !u!1 &2007701346

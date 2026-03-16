@@ -1,39 +1,22 @@
 using UnityEngine;
 
-public class Enemy_Chase : MonoBehaviour
+public class Enemy_Chase : Enemy_Base
 {
-
-    public float moveSpeed = 2.0f;
-    Transform player;
-    Rigidbody2D rb;
-    
-     // Chase player
-    void Start()
+    protected override void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        //find player
-        GameObject playerObj = GameObject.FindWithTag("Player");
-        if (playerObj != null)
-        {
-            player = playerObj.transform;
-        }
+        base.Awake();
     }
 
-    // Update is called once per frame
+    // Chase player
     void FixedUpdate()
     {
-        if (player == null) return;
-
-        // calculate direction
-        Vector2 direction = (player.position - transform.position).normalized;
-
-        // move
-        rb.linearVelocity = direction * moveSpeed;
-    }   
+        // calculate direction + move
+        rb.linearVelocity = GetDirectionToPlayer() * moveSpeed;
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //Debug Log
+        // Debug Log
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Hit Player");
