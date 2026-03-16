@@ -29,7 +29,7 @@ public class EnemyFollow : MonoBehaviour
 
         // move
         rb.linearVelocity = direction * moveSpeed;
-    }
+    }   
 
     void OnCollisionEnter2D(Collision2D collision)
     {
