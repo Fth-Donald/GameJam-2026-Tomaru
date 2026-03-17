@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Enemy_OnionAttack : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class Enemy_OnionAttack : MonoBehaviour
 
     [Header("Spawn Height")]
     public float spawnHeightOffset = 15f;  // 生成位置在落點上方多遠（Camera 外）
+
+    [Header("Phase 2 Time Delay")]
+    public float minDelay = 0f;            // 每個眼淚之間最短時間差
+    public float maxDelay = 0.8f;          // 每個眼淚之間最長時間差
 
     Enemy_OnionBoss boss;
     Transform player;
@@ -39,18 +44,41 @@ public class Enemy_OnionAttack : MonoBehaviour
 
     void Attack()
     {
+        if (boss.IsPhase2)
+        {
+            // Phase 2：有隨機時間差分散落下
+            StartCoroutine(SpawnTearsWithDelay());
+        }
+        else
+        {
+            // Phase 1：同時生成所有眼淚
+            for (int i = 0; i < spawnCount; i++)
+            {
+                SpawnTear(GetRandomMapPosition());
+            }
+        }
+    }
+
+    IEnumerator SpawnTearsWithDelay()
+    {
         for (int i = 0; i < spawnCount; i++)
         {
-            // 決定落點
-            Vector2 targetPos = boss.IsPhase2 ? GetNearPlayerPosition() : GetRandomMapPosition();
+            SpawnTear(GetNearPlayerPosition());
 
-            // 在落點正上方（Camera 外）生成眼淚
-            Vector2 spawnPos = targetPos + Vector2.up * spawnHeightOffset;
-            GameObject tear = Instantiate(tearPrefab, spawnPos, Quaternion.identity);
-
-            // 傳入落點給眼淚
-            tear.GetComponent<Enemy_OnionTear>().Init(targetPos);
+            // 每個眼淚之間隨機時間差
+            float delay = Random.Range(minDelay, maxDelay);
+            yield return new WaitForSeconds(delay);
         }
+    }
+
+    void SpawnTear(Vector2 targetPos)
+    {
+        // 在落點正上方（Camera 外）生成眼淚
+        Vector2 spawnPos = targetPos + Vector2.up * spawnHeightOffset;
+        GameObject tear = Instantiate(tearPrefab, spawnPos, Quaternion.identity);
+
+        // 傳入落點給眼淚
+        tear.GetComponent<Enemy_OnionTear>().Init(targetPos);
     }
 
     Vector2 GetRandomMapPosition()
