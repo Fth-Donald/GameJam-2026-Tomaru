@@ -21,18 +21,20 @@ public class PauseManager : MonoBehaviour
     }
     void OnEnable()
     {
+        pauseAction.action.Enable();
         pauseAction.action.performed += OnPause;
     }
 
     void OnDisable()
     {
         pauseAction.action.performed -= OnPause;
+        pauseAction.action.Disable();
     }
 
      void OnPause(InputAction.CallbackContext context)
     {
+        Debug.Log("esc");
         isPaused = !isPaused;
-
 
         if (isPaused)
         {
