@@ -1,5 +1,12 @@
 fileFormatVersion: 2
-guid: f052a49b1f7e48040bea63df7207cb5c
+guid: 9a6560e5bacb40847bb1b879ede354fb
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103811
+  packageName: 'Fantasy Wooden GUI : Free'
+  packageVersion: 2.0
+  assetPath: Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium stone.png
+  uploadId: 294936
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,11 +52,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 16, y: 16, z: 16, w: 16}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -63,7 +70,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
@@ -79,7 +86,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -92,20 +99,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -113,7 +107,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: df9a847929e4a3e438d0fa6212ce6915
     internalID: 0
     vertices: []
     indices: 
@@ -128,10 +122,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 225102
-  packageName: Simple Cartoon UI
-  packageVersion: 1.1
-  assetPath: Assets/Cartoon UI/Progress Bar/Type 1/Progress Bar Fill Red.png
-  uploadId: 825882
