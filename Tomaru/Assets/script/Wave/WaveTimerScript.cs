@@ -7,7 +7,7 @@ public class WaveTimerScript : MonoBehaviour
     public TMP_Text timerText;   // UI文字
     public WaveScript waveScript;
     public WaveTxtScript　waveTxtScript;
-    public float timeLeft = 20f; // 倒计时秒数
+    public float timeLeft; // 倒计时秒数
 
     private bool isRunning = false;
 
@@ -26,12 +26,16 @@ public class WaveTimerScript : MonoBehaviour
 
         UpdateUI();
     }
-
+    private void Start()
+    {
+        timerText.gameObject.SetActive(false);
+    }
     void UpdateUI()
     {
         if (timeLeft > 5f)
         {
             timerText.text = Mathf.CeilToInt(timeLeft).ToString();
+            timerText.color = Color.white;
         }
         else
         {
@@ -41,10 +45,13 @@ public class WaveTimerScript : MonoBehaviour
     }
     public void TimerStart()
     {
+        timeLeft = 10;
+        timerText.gameObject.SetActive(true);
         isRunning = true;
     }
     void TimerEnd()
     {
+        timerText.gameObject.SetActive(false);
         waveTxtScript.WaveStartTxtStart();
     }
 }
