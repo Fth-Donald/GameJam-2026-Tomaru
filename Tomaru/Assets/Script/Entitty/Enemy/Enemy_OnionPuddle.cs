@@ -10,7 +10,7 @@ public class Enemy_OnionPuddle : MonoBehaviour
     public float lifetime = 5f;           // 水灘存在時間（眼淚產生的水灘在Inspector調短）
 
     [Header("Max Puddles")]
-    public static int maxPuddles = 10;    // 全場最多水灘數量，超過就消滅最早生成的
+    public static int maxPuddles = 200;    // 全場最多水灘數量，超過就消滅最早生成的
     static Queue<Enemy_OnionPuddle> activePuddles = new Queue<Enemy_OnionPuddle>();
 
     float damageTimer;

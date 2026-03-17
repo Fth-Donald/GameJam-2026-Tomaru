@@ -139,4 +139,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   damageInterval: 0.5
-  lifetime: 5
+  lifetime: 300
