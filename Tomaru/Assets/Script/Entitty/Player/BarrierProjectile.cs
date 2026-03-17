@@ -25,18 +25,20 @@ public class BarrierProjectile : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    public int damage = 2;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        int damage = 1;
+        Transform transform = other.transform;
+        if (!other.CompareTag("Enemy")) return;
+
+        Entity entity = other.GetComponent<Entity>();
+        if (entity != null)
         {
-            Health enemyHealth = other.GetComponent<Health>(); 
-            if (enemyHealth != null)
-            {
-                enemyHealth.TakeDamage(damage);
-            }
-            Destroy(gameObject);
+            entity.TakeDamage(damage, transform);
         }
+
+        Destroy(gameObject);
     }
+
 }

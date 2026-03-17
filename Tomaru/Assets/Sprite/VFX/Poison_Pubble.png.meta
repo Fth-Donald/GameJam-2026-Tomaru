@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: 6b71b673589644d4a83e034441bafcff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2721075593977881961
+    second: poison_pubble_0
+  - first:
+      213: -7488494886292788871
+    second: poison_pubble_1
+  - first:
+      213: 7633018425795190168
+    second: poison_pubble_2
+  - first:
+      213: 675358982104131518
+    second: poison_pubble_3
+  - first:
+      213: 5033895483405239624
+    second: poison_pubble_4
+  - first:
+      213: -1536065527430627695
+    second: poison_pubble_5
+  - first:
+      213: -1319994533342465592
+    second: poison_pubble_6
+  - first:
+      213: 3573521099129258533
+    second: poison_pubble_7
+  - first:
+      213: 7189118825707866465
+    second: poison_pubble_8
+  - first:
+      213: 3611568034911592829
+    second: poison_pubble_9
+  - first:
+      213: 2271270042633058394
+    second: poison_pubble_10
+  - first:
+      213: 5975347494911067003
+    second: poison_pubble_11
+  - first:
+      213: 4961108365246591342
+    second: poison_pubble_12
+  - first:
+      213: 6510934590729821748
+    second: poison_pubble_13
+  - first:
+      213: -1139995294976756157
+    second: poison_pubble_14
+  - first:
+      213: 4501025542105012519
+    second: poison_pubble_15
+  - first:
+      213: 1327757978587331558
+    second: poison_pubble_16
+  - first:
+      213: 5229751046158196766
+    second: poison_pubble_17
+  - first:
+      213: 8844677763738706717
+    second: poison_pubble_18
+  - first:
+      213: -6468968378433687954
+    second: poison_pubble_19
+  - first:
+      213: -2219825837616760555
+    second: poison_pubble_20
+  - first:
+      213: -652382482152566416
+    second: poison_pubble_21
+  - first:
+      213: -3896594507258645241
+    second: poison_pubble_22
+  - first:
+      213: -435227728268992966
+    second: poison_pubble_23
+  - first:
+      213: 5942935784674436737
+    second: poison_pubble_24
+  - first:
+      213: 5738192661930806893
+    second: poison_pubble_25
+  - first:
+      213: 1808271339804801188
+    second: poison_pubble_26
+  - first:
+      213: -7740741349157429302
+    second: poison_pubble_27
+  - first:
+      213: 7153578351633545444
+    second: poison_pubble_28
+  - first:
+      213: 3772668891265221966
+    second: poison_pubble_29
+  - first:
+      213: 6544403437057500593
+    second: poison_pubble_30
+  - first:
+      213: 2614510991358463699
+    second: poison_pubble_31
+  - first:
+      213: -8182469339763231803
+    second: poison_pubble_32
+  - first:
+      213: -2061818685706020357
+    second: poison_pubble_33
+  - first:
+      213: -2640093662698695729
+    second: poison_pubble_34
+  - first:
+      213: -8082512544851475181
+    second: poison_pubble_35
+  - first:
+      213: 2037652453802084194
+    second: poison_pubble_36
+  - first:
+      213: 5784892644147037444
+    second: poison_pubble_37
+  - first:
+      213: 1890397235316844068
+    second: poison_pubble_38
+  - first:
+      213: -4490731993432360615
+    second: poison_pubble_39
+  - first:
+      213: -2374697462218595377
+    second: poison_pubble_40
+  - first:
+      213: -6045341015997961259
+    second: poison_pubble_41
+  - first:
+      213: -7428164229556900394
+    second: poison_pubble_42
+  - first:
+      213: -360972302218804925
+    second: poison_pubble_43
+  - first:
+      213: -6413996353651111638
+    second: poison_pubble_44
+  - first:
+      213: 2935691058811906467
+    second: poison_pubble_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poison_pubble_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 649
+        width: 184
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a96f50a2ccc3ad0800000000000000
+      internalID: -2721075593977881961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 637
+        width: 183
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9796030a395831890800000000000000
+      internalID: -7488494886292788871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 624
+        width: 183
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d988911ddede960800000000000000
+      internalID: 7633018425795190168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_3
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 615
+        width: 184
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7af208a6b5f5900800000000000000
+      internalID: 675358982104131518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_4
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 604
+        width: 184
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84500dc754dfbd540800000000000000
+      internalID: 5033895483405239624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_5
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 592
+        width: 183
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e36cd8a8cceaae0800000000000000
+      internalID: -1536065527430627695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_6
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 611
+        width: 184
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c13aae27ff6eade0800000000000000
+      internalID: -1319994533342465592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_7
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 598
+        width: 183
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52286fe9182b79130800000000000000
+      internalID: 3573521099129258533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_8
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 570
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169046e7b71e4c360800000000000000
+      internalID: 7189118825707866465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_9
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 549
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71af0b2efdde1230800000000000000
+      internalID: 3611568034911592829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 436
+        width: 166
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a583120f11c258f10800000000000000
+      internalID: 2271270042633058394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_11
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 436
+        width: 167
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73c1bb43e2bce250800000000000000
+      internalID: 5975347494911067003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_12
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 436
+        width: 167
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61fdbae5c569d440800000000000000
+      internalID: 4961108365246591342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_13
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 436
+        width: 167
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e114c838c7b5a50800000000000000
+      internalID: 6510934590729821748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_14
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 436
+        width: 166
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3463b45b15ced20f0800000000000000
+      internalID: -1139995294976756157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_15
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 436
+        width: 167
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729112212ead67e30800000000000000
+      internalID: 4501025542105012519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_16
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 436
+        width: 167
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb7365c8d42d6210800000000000000
+      internalID: 1327757978587331558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_17
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 436
+        width: 167
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10acf93edec39840800000000000000
+      internalID: 5229751046158196766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_18
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 234
+        width: 183
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d132174a09b9eba70800000000000000
+      internalID: 8844677763738706717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_19
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 246
+        width: 183
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ea93ca88b9936a0800000000000000
+      internalID: -6468968378433687954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_20
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 262
+        width: 183
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5197e9d69289131e0800000000000000
+      internalID: -2219825837616760555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_21
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 273
+        width: 183
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071db95c69542f6f0800000000000000
+      internalID: -652382482152566416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_22
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 280
+        width: 183
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7053c11d0f38ce9c0800000000000000
+      internalID: -3896594507258645241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_23
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 286
+        width: 183
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e5024efa2c5f9f0800000000000000
+      internalID: -435227728268992966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_24
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 294
+        width: 184
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1862a70fb9c897250800000000000000
+      internalID: 5942935784674436737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_25
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 296
+        width: 183
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e8323e2d722af40800000000000000
+      internalID: 5738192661930806893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_26
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 226
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8b592f335481910800000000000000
+      internalID: 1808271339804801188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_27
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 175
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf1b4151cc539490800000000000000
+      internalID: -7740741349157429302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_28
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 186
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8ba0a0c9d964360800000000000000
+      internalID: 7153578351633545444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_29
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 204
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45c70f3e563b5430800000000000000
+      internalID: 3772668891265221966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_30
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 152
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b568a4904462da50800000000000000
+      internalID: 6544403437057500593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_31
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 164
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de8645f4eb984420800000000000000
+      internalID: 2614510991358463699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_32
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 183
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c333e1fc77027e80800000000000000
+      internalID: -8182469339763231803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9da3f44d2f263e0800000000000000
+      internalID: -2061818685706020357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_34
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 143
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc395153dc08c5bd0800000000000000
+      internalID: -2640093662698695729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_35
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 161
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3154d77d9a525df80800000000000000
+      internalID: -8082512544851475181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_36
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 122
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267839c5c12374c10800000000000000
+      internalID: 2037652453802084194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_37
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 139
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405872ec531184050800000000000000
+      internalID: 5784892644147037444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_38
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 83
+        width: 166
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426e07f054a0c3a10800000000000000
+      internalID: 1890397235316844068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_39
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 83
+        width: 167
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9597bfd7b07bda1c0800000000000000
+      internalID: -4490731993432360615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_40
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 83
+        width: 167
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc360736d316b0fd0800000000000000
+      internalID: -2374697462218595377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_41
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 83
+        width: 167
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dba7532062aa1ca0800000000000000
+      internalID: -6045341015997961259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_42
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 83
+        width: 166
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd6ff34dfbd9e890800000000000000
+      internalID: -7428164229556900394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_43
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 83
+        width: 166
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3414e788a919dfaf0800000000000000
+      internalID: -360972302218804925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_44
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 84
+        width: 167
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2989f59c48ecf6a0800000000000000
+      internalID: -6413996353651111638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poison_pubble_45
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 84
+        width: 167
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a926cac67badb820800000000000000
+      internalID: 2935691058811906467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      poison_pubble_0: -2721075593977881961
+      poison_pubble_1: -7488494886292788871
+      poison_pubble_10: 2271270042633058394
+      poison_pubble_11: 5975347494911067003
+      poison_pubble_12: 4961108365246591342
+      poison_pubble_13: 6510934590729821748
+      poison_pubble_14: -1139995294976756157
+      poison_pubble_15: 4501025542105012519
+      poison_pubble_16: 1327757978587331558
+      poison_pubble_17: 5229751046158196766
+      poison_pubble_18: 8844677763738706717
+      poison_pubble_19: -6468968378433687954
+      poison_pubble_2: 7633018425795190168
+      poison_pubble_20: -2219825837616760555
+      poison_pubble_21: -652382482152566416
+      poison_pubble_22: -3896594507258645241
+      poison_pubble_23: -435227728268992966
+      poison_pubble_24: 5942935784674436737
+      poison_pubble_25: 5738192661930806893
+      poison_pubble_26: 1808271339804801188
+      poison_pubble_27: -7740741349157429302
+      poison_pubble_28: 7153578351633545444
+      poison_pubble_29: 3772668891265221966
+      poison_pubble_3: 675358982104131518
+      poison_pubble_30: 6544403437057500593
+      poison_pubble_31: 2614510991358463699
+      poison_pubble_32: -8182469339763231803
+      poison_pubble_33: -2061818685706020357
+      poison_pubble_34: -2640093662698695729
+      poison_pubble_35: -8082512544851475181
+      poison_pubble_36: 2037652453802084194
+      poison_pubble_37: 5784892644147037444
+      poison_pubble_38: 1890397235316844068
+      poison_pubble_39: -4490731993432360615
+      poison_pubble_4: 5033895483405239624
+      poison_pubble_40: -2374697462218595377
+      poison_pubble_41: -6045341015997961259
+      poison_pubble_42: -7428164229556900394
+      poison_pubble_43: -360972302218804925
+      poison_pubble_44: -6413996353651111638
+      poison_pubble_45: 2935691058811906467
+      poison_pubble_5: -1536065527430627695
+      poison_pubble_6: -1319994533342465592
+      poison_pubble_7: 3573521099129258533
+      poison_pubble_8: 7189118825707866465
+      poison_pubble_9: 3611568034911592829
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
