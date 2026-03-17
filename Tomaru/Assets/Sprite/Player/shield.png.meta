@@ -1,34 +1,10 @@
 fileFormatVersion: 2
-guid: b0f87a54b0295db41a621dde0bf63d6e
+guid: 5897f70019e24024bbec1f2acbbaf695
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1208040086343421634
-    second: image_0
-  - first:
-      213: 3888885927669863452
-    second: image_1
-  - first:
-      213: 7490263070313451839
-    second: image_2
-  - first:
-      213: 4226173966848952685
-    second: image_3
-  - first:
-      213: -1333989528306422963
-    second: image_4
-  - first:
-      213: 2760427164684504735
-    second: image_5
-  - first:
-      213: -6145872667730287161
-    second: image_6
-  - first:
-      213: 3108315301061666720
-    second: image_7
-  - first:
-      213: 5670843616968309514
-    second: image_8
+      213: 2389193319765324094
+    second: shield_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -124,89 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water_drop_1
+      name: shield_0
       rect:
         serializedVersion: 2
-        x: 575
-        y: 615
-        width: 265
-        height: 242
+        x: 353
+        y: 25
+        width: 316
+        height: 952
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7b64de17943ff5e4d85204808016a9c4
-      internalID: 153807011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_drop_2
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 659
-        width: 96
-        height: 167
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63fa62bbbd7bd734eaf52d93e4d553f9
-      internalID: 972179469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_drop_7
-      rect:
-        serializedVersion: 2
-        x: 537
-        y: 256
-        width: 350
-        height: 154
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 069a94b06d593004481ab09e306d6889
-      internalID: 1379330545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_drop_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 262
-        width: 294
-        height: 147
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed4943ff08fbcab4282f746c58311f44
-      internalID: 1568838297
+      spriteID: e3139547aae182120800000000000000
+      internalID: 2389193319765324094
       vertices: []
       indices: 
       edges: []
@@ -215,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0657679b12d494640a0c5b1838c4282c
+    spriteID: e67bfa67c7fd96e4e8024e3a0c277668
     internalID: 0
     vertices: []
     indices: 
@@ -225,15 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Water_drop_0: 631364119
-      Water_drop_1: 153807011
-      Water_drop_2: 972179469
-      Water_drop_3: -427766181
-      Water_drop_4: -2119906513
-      Water_drop_5: -1219224476
-      Water_drop_6: 1961996928
-      Water_drop_7: 1379330545
-      Water_drop_8: 1568838297
+      shield_0: 2389193319765324094
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
