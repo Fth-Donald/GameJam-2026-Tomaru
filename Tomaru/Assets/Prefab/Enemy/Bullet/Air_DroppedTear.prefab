@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4926858887940067534}
   - component: {fileID: 7581020142481088877}
   - component: {fileID: 7641760699741041649}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Air_DroppedTear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,5 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d80ed0059b0864eb8d4476bc5cd557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 8
-  impactPrefab: {fileID: 1522998627015768832, guid: 050c181e83fdc214c89c1e2750d44472, type: 3}
+  fallSpeed: 20
+  impactPrefab: {fileID: 7286570074422583664, guid: 8be195abba191d249b54d9c87349498a, type: 3}
+  shadowPrefab: {fileID: 9114402221807092326, guid: a408ed72c30f5b448be6d439c118f587, type: 3}
+  maxShadowScale: 1
+  minShadowScale: 0.1

@@ -7,6 +7,8 @@ public class Enemy_Base : Entity
     public int contactDamage = 1;
     protected Transform player;
 
+    public WaveScript wave;
+
     protected override void Awake()
     {
         base.Awake();
@@ -16,5 +18,15 @@ public class Enemy_Base : Entity
     protected Vector2 GetDirectionToPlayer()
     {
         return ((Vector2)(player.position - transform.position)).normalized;
+    }
+
+    protected override void Die()
+    {
+        if (isDead) return;
+
+        wave.OnEnemyKilled();
+        
+
+        base.Die();
     }
 }

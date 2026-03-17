@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 57632227550a9b845bb35e444c0f6ffe
+guid: a1af652b671f1c2469135820696e082d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4361945680274326058
-    second: Square Toogle Background_0
+      213: 1368519161191829812
+    second: Designer_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Square Toogle Background_0
+      name: Designer_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 120
-        height: 120
+        x: 60
+        y: 176
+        width: 760
+        height: 760
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a220d425c7eb88c30800000000000000
-      internalID: 4361945680274326058
+      spriteID: 43197272de4fdf210800000000000000
+      internalID: 1368519161191829812
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6c53e867d4129524a8cce196ac111a3b
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Square Toogle Background_0: 4361945680274326058
+      Designer_0: 1368519161191829812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
