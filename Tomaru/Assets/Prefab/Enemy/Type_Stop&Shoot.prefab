@@ -118,7 +118,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &5592875061079940576
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -168,10 +168,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHP: 3
-  contactDamage: 1
+  maxHealth: 5
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
+  isDead: 0
+  contactDamage: 1
 --- !u!114 &7572218173832911888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,10 +188,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHP: 3
-  contactDamage: 1
+  maxHealth: 5
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
+  isDead: 0
+  contactDamage: 1
   stopRange: 5
 --- !u!114 &7404637724683119298
 MonoBehaviour:
@@ -203,10 +209,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHP: 3
-  contactDamage: 1
+  maxHealth: 5
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
+  isDead: 0
+  contactDamage: 1
   bulletPrefab: {fileID: 1963537888770040043, guid: f4945444a2124d54eab790c67990e798, type: 3}
   shootInterval: 1.5
   bulletSpeed: 6

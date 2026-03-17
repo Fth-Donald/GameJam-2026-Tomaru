@@ -10,16 +10,17 @@ public class WaveScript : MonoBehaviour
     //击杀数
     private int KillCnt;
     //波次数
-    private int WaveCnt;
+    public int WaveCnt;
     //是否在波次中
     bool IsWave=true;
     void EndWave()
     {
         IsWave = false;
+        WaveCnt++;
     }
     void WaveSpawn()
     {
-        StartCoroutine(e_S_Script.SpawnEnemies(e_S_Script.enemyPrefabs, 100, 1f));
+        StartCoroutine(e_S_Script.SpawnEnemies(e_S_Script.enemyPrefabs, WaveCnt*30, 1f));
     }
     void Start()
     {
