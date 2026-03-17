@@ -4,6 +4,7 @@ public class BarrierProjectile : MonoBehaviour
 {
     public float speed = 12f;
     public float lifetime = 2f;
+    public float knockbackForce = 50f;
 
     private Vector2 moveDirection;
 
