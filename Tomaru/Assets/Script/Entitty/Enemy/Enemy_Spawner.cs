@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class Enemy_Spawner : MonoBehaviour
 {
+
+    [Header("Enemy Prefabs")]
+    public GameObject[] enemyPrefabs;
+
     [Header("Spawn Range")]
     public float minSpawnRadius = 8f;
     public float maxSpawnRadius = 12f;
