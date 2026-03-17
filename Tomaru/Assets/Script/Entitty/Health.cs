@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    [Header("HPScript")]
+    public HPScript hPScript;
+
     public int maxHealth = 5;
     public float invincibleTime = 1f;
     public bool isDead = false;
@@ -20,6 +23,9 @@ public class Health : MonoBehaviour
         if (isInvincible) return;
 
         currentHealth -= damage;
+        //HPUI
+        hPScript.SetHP(currentHealth);
+
         Debug.Log(gameObject.name + " took " + damage + " damage. HP: " + currentHealth);
 
         if (currentHealth <= 0)
@@ -38,6 +44,8 @@ public class Health : MonoBehaviour
 
         currentHealth += (int)amount;
         currentHealth = Mathf.Min(currentHealth, maxHealth);
+        //HPUI
+        hPScript.SetHP(currentHealth);
     }
 
     private System.Collections.IEnumerator InvincibilityCoroutine()
