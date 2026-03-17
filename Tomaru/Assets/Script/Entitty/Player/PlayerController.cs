@@ -1,8 +1,13 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : Entity
 {
+    [SerializeField] GameObject barrier;
+    [SerializeField] GameObject sword;
+    private bool usingBarrier = true;
+
     [Header("Movement")]
     
 
@@ -13,6 +18,8 @@ public class PlayerController : Entity
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
+
+        EquipBarrier();
     }
 
     private void Update()
@@ -21,6 +28,11 @@ public class PlayerController : Entity
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput = moveInput.normalized;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ToggleWeapon();
+        }
     }
 
     private void FixedUpdate()
@@ -36,6 +48,32 @@ public class PlayerController : Entity
         rb.linearVelocity = Vector2.zero;
         Debug.Log("Game Over");
         gameObject.SetActive(false);
+    }
+
+    private void ToggleWeapon()
+    {
+        usingBarrier = !usingBarrier;
+
+        if (usingBarrier)
+        {
+            EquipBarrier();
+        }
+        else
+        {
+            EquipSword();
+        }
+    }
+
+    private void EquipBarrier()
+    {
+        barrier.SetActive(true);
+        sword.SetActive(false);
+    }
+
+    private void EquipSword()
+    {
+        barrier.SetActive(false);
+        sword.SetActive(true);
     }
 
 }
