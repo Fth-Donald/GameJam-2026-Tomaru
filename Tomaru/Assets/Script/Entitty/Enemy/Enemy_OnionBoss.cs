@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Enemy_OnionBoss : Enemy_Base
 {
@@ -13,6 +14,9 @@ public class Enemy_OnionBoss : Enemy_Base
     [Header("Camera Boundary")]
     public float boundaryPadding = 0.5f;    // 距離邊界的緩衝距離
 
+    [Header("Barrier Collision")]
+    public float knockbackStopDuration = 0.2f; // 被護盾撞到後停下的時間
+
     // 45度方位（東北、東南、西南、西北）
     readonly Vector2[] phase2Directions = new Vector2[]
     {
@@ -24,6 +28,8 @@ public class Enemy_OnionBoss : Enemy_Base
 
     bool isPhase2 = false;
     public bool IsPhase2 => isPhase2;
+
+    bool isKnockedBack = false;          // 被護盾撞到後的停止狀態
 
     Vector2 moveDirection;
     float distanceTravelled = 0f;
@@ -63,6 +69,28 @@ public class Enemy_OnionBoss : Enemy_Base
             Die();
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!isPhase2) return;
+        if (!collision.gameObject.CompareTag("Barrier")) return;
+
+        // 碰到護盾：停下並換方向
+        StartCoroutine(BarrierKnockbackRoutine());
+    }
+
+    IEnumerator BarrierKnockbackRoutine()
+    {
+        // 停止移動
+        isKnockedBack = true;
+        rb.linearVelocity = Vector2.zero;
+
+        yield return new WaitForSeconds(knockbackStopDuration);
+
+        // 恢復移動，馬上換方向
+        isKnockedBack = false;
+        PickNewDirection();
+    }
+
     void EnterPhase2()
     {
         isPhase2 = true;
@@ -77,37 +105,33 @@ public class Enemy_OnionBoss : Enemy_Base
         distanceTravelled = 0f;
     }
 
-    // 取得 Camera 的邊界
     Bounds GetCameraBounds()
     {
         float camHeight = mainCam.orthographicSize;
         float camWidth = camHeight * mainCam.aspect;
-
         Vector2 camPos = mainCam.transform.position;
-
         return new Bounds(camPos, new Vector3(camWidth * 2, camHeight * 2, 0));
     }
 
     void FixedUpdate()
     {
         if (!isPhase2) return;
+        if (isKnockedBack) return;
 
         // 移動
         rb.linearVelocity = moveDirection * phase2MoveSpeed;
 
         // 取得 Camera 邊界
         Bounds bounds = GetCameraBounds();
-
         float minX = bounds.min.x + boundaryPadding;
         float maxX = bounds.max.x - boundaryPadding;
         float minY = bounds.min.y + boundaryPadding;
         float maxY = bounds.max.y - boundaryPadding;
 
-        // 超出邊界時反方向，重新選擇方向
+        // 超出邊界時夾回邊界內並換方向
         Vector2 pos = transform.position;
         if (pos.x <= minX || pos.x >= maxX || pos.y <= minY || pos.y >= maxY)
         {
-            // 把位置夾在邊界內
             transform.position = new Vector2(
                 Mathf.Clamp(pos.x, minX, maxX),
                 Mathf.Clamp(pos.y, minY, maxY)
