@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.73, y: 3.58, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  m_Sprite: {fileID: 4144650804457457310, guid: e1c2d0232aed48040ad43bf768d8937c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,11 +166,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d20496a18aec44698381c0af09eb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  maxHP: 20
-  contactDamage: 1
+  moveSpeed: 6
+  maxHealth: 30
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
+  knockbackDuration: 0.2
+  isDead: 0
+  isKnockedBack: 0
+  isInvincible: 0
+  contactDamage: 1
+  wave: {fileID: 0}
   slicePrefab: {fileID: 2567639118810631646, guid: 2c7a3498cb1659c41804a3cf169b1db5, type: 3}
   sliceCount: 5
 --- !u!114 &6733872313815548284
@@ -186,7 +193,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHP: 3
-  contactDamage: 1
+  maxHealth: 5
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
+  knockbackDuration: 0.2
+  isDead: 0
+  isKnockedBack: 0
+  isInvincible: 0
+  contactDamage: 1
+  wave: {fileID: 0}

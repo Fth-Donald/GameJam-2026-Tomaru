@@ -103,12 +103,12 @@ TextureImporter:
       name: WaterMelon_Seed_0
       rect:
         serializedVersion: 2
-        x: 275
-        y: 88
-        width: 423
-        height: 675
+        x: 322
+        y: 315
+        width: 376
+        height: 448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 28ec7aadd461d374d8ca318dcef70782
     internalID: 0
     vertices: []
     indices: 

@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.22, y: -1.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  m_Sprite: {fileID: -6614305110274840035, guid: cc7cb3946fd5295419c9872a35544425, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,10 +106,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHP: 3
-  contactDamage: 1
+  maxHealth: 5
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
+  knockbackDuration: 0.2
+  isDead: 0
+  isKnockedBack: 0
+  isInvincible: 0
+  contactDamage: 1
+  wave: {fileID: 0}
 --- !u!50 &7567030300363457834
 Rigidbody2D:
   serializedVersion: 5
@@ -186,10 +193,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  maxHP: 3
-  contactDamage: 1
+  maxHealth: 5
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
+  knockbackDuration: 0.2
+  isDead: 0
+  isKnockedBack: 0
+  isInvincible: 0
+  contactDamage: 1
+  wave: {fileID: 0}
 --- !u!114 &83321920123290838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,10 +217,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHP: 3
-  contactDamage: 1
+  maxHealth: 5
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
+  knockbackDuration: 0.2
+  isDead: 0
+  isKnockedBack: 0
+  isInvincible: 0
+  contactDamage: 1
+  wave: {fileID: 0}
   stopRange: 5
 --- !u!114 &192386052484303643
 MonoBehaviour:
@@ -221,10 +242,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHP: 3
-  contactDamage: 1
+  maxHealth: 5
+  currentHealth: 0
+  invincibleTime: 1
   knockbackForce: 6
   deathDelay: 0.3
-  bulletPrefab: {fileID: 1963537888770040043, guid: f4945444a2124d54eab790c67990e798, type: 3}
+  knockbackDuration: 0.2
+  isDead: 0
+  isKnockedBack: 0
+  isInvincible: 0
+  contactDamage: 1
+  wave: {fileID: 0}
+  bulletPrefab: {fileID: 1963537888770040043, guid: a89ec8b35b3ef1242834c0ba67fbcebb, type: 3}
   shootInterval: 1.5
   bulletSpeed: 6

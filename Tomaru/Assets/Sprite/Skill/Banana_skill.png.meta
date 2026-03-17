@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7ad33347e1ac3c5429fcac3c1e1d2d0f
+guid: 3bbbdb49628990f4cb925cc38eb6683f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7381965769198725172
-    second: Banana_0
+      213: 5082738751563355700
+    second: Banana_skill_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Banana_0
+      name: Banana_skill_0
       rect:
         serializedVersion: 2
-        x: 163
-        y: 303
-        width: 650
-        height: 495
+        x: 127
+        y: 88
+        width: 746
+        height: 703
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 438ee2971c2027660800000000000000
-      internalID: 7381965769198725172
+      spriteID: 436db0d07f3898640800000000000000
+      internalID: 5082738751563355700
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 68808db47554f984183bf3944c7332a7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Banana_0: 7381965769198725172
+      Banana_skill_0: 5082738751563355700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
