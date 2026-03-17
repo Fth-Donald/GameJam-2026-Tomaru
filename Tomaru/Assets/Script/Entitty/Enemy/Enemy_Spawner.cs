@@ -14,6 +14,8 @@ public class Enemy_Spawner : MonoBehaviour
     [Header("Optional")]
     public Transform player;
 
+    public WaveScript waveScript;
+
     void Awake()
     {
         // �@�� Inspector ���L�蓮�w�� player�C�A�����Q Player Tag
@@ -48,9 +50,14 @@ public class Enemy_Spawner : MonoBehaviour
         }
 
         Vector2 spawnPosition = GetRandomSpawnPosition();
-        GameObject spawnedEnemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
 
-        return spawnedEnemy;
+        GameObject spawnedEnemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+        
+        Enemy_Base enemyScript = spawnedEnemy.GetComponent<Enemy_Base>(); 
+        
+            enemyScript.wave = waveScript;
+
+            return spawnedEnemy;
     }
 
     // �A㔐������ǓG�l�i�� Wave �n���ċ��j

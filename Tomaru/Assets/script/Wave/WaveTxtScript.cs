@@ -9,7 +9,7 @@ public class WaveTxtScript : MonoBehaviour
     private bool IsStart = true;
     public TMP_Text timerText;
     private float scale=1f;
-    private void Update()
+    void Update()
     {
         if (!IsStart) return;
         if(WaveStartTxtTimer < 0)
@@ -21,8 +21,8 @@ public class WaveTxtScript : MonoBehaviour
     }
     void UpdateUI()
     {
-        scale += Time.deltaTime;
-
+        scale += 4*Time.deltaTime;
+        WaveStartTxtTimer -=Time.deltaTime;
         timerText.transform.localScale = Vector3.one * scale;
     }
     public void WaveStartTxtStart()
