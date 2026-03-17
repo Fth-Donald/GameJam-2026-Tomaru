@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 50992824}
   - component: {fileID: 50992823}
   m_Layer: 0
-  m_Name: ScoreObject
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1202,7 +1202,7 @@ GameObject:
   - component: {fileID: 1360232049}
   - component: {fileID: 1360232048}
   m_Layer: 5
-  m_Name: WaveCntCanvas
+  m_Name: WaveCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2638,7 +2638,7 @@ SceneRoots:
   - {fileID: 404892850475167349}
   - {fileID: 1962562388}
   - {fileID: 1885223982}
-  - {fileID: 332506669}
   - {fileID: 740895707}
   - {fileID: 50992824}
   - {fileID: 1360232051}
+  - {fileID: 332506669}

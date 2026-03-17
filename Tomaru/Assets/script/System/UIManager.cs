@@ -6,7 +6,6 @@ public class UIManager: MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 
-
     ///////////////////StartButton//////////////////
     public void GoToGameScene()
     {
@@ -23,6 +22,11 @@ public class UIManager: MonoBehaviour
         Application.Quit();
     }
 
+    /////////////////////CutScene///////////////
+    public void GoCutScene()
+    {
+
+    }
 
     /////////////////////StageSelectButton///////////////
     //public void GoToStage1_1()
@@ -37,5 +41,5 @@ public class UIManager: MonoBehaviour
     //{
     //    SceneManager.LoadScene("Stage1-3");
     //}
-    
+
 }
