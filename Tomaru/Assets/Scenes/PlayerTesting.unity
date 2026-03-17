@@ -153,6 +153,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6179136711174593870, guid: 43d6b3f1ba50fb140959aaaf2abf6187, type: 3}
+      propertyPath: spawnCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179136711174593870, guid: 43d6b3f1ba50fb140959aaaf2abf6187, type: 3}
       propertyPath: nearPlayerRadius
       value: 5
       objectReference: {fileID: 0}

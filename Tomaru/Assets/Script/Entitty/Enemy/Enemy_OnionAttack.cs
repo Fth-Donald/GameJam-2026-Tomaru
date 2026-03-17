@@ -10,16 +10,16 @@ public class Enemy_OnionAttack : MonoBehaviour
 
     [Header("Phase 1 - Full Map")]
     public float mapRadius = 20f;          // 全地圖隨機範圍半徑
+    public float phase1MinDelay = 0.1f;    // Phase 1 每個眼淚最短時間差
+    public float phase1MaxDelay = 0.4f;    // Phase 1 每個眼淚最長時間差
 
     [Header("Phase 2 - Near Player")]
     public float nearPlayerRadius = 4f;    // 玩家附近隨機範圍半徑
+    public float phase2MinDelay = 0f;      // Phase 2 每個眼淚最短時間差
+    public float phase2MaxDelay = 0.8f;    // Phase 2 每個眼淚最長時間差
 
     [Header("Spawn Height")]
     public float spawnHeightOffset = 15f;  // 生成位置在落點上方多遠（Camera 外）
-
-    [Header("Phase 2 Time Delay")]
-    public float minDelay = 0f;            // 每個眼淚之間最短時間差
-    public float maxDelay = 0.8f;          // 每個眼淚之間最長時間差
 
     Enemy_OnionBoss boss;
     Transform player;
@@ -46,28 +46,32 @@ public class Enemy_OnionAttack : MonoBehaviour
     {
         if (boss.IsPhase2)
         {
-            // Phase 2：有隨機時間差分散落下
-            StartCoroutine(SpawnTearsWithDelay());
+            // Phase 2：玩家附近，隨機時間差
+            StartCoroutine(SpawnTearsWithDelay(false));
         }
         else
         {
-            // Phase 1：同時生成所有眼淚
-            for (int i = 0; i < spawnCount; i++)
-            {
-                SpawnTear(GetRandomMapPosition());
-            }
+            // Phase 1：全地圖隨機，也有時間差
+            StartCoroutine(SpawnTearsWithDelay(true));
         }
     }
 
-    IEnumerator SpawnTearsWithDelay()
+    IEnumerator SpawnTearsWithDelay(bool isPhase1)
     {
         for (int i = 0; i < spawnCount; i++)
         {
-            SpawnTear(GetNearPlayerPosition());
-
-            // 每個眼淚之間隨機時間差
-            float delay = Random.Range(minDelay, maxDelay);
-            yield return new WaitForSeconds(delay);
+            if (isPhase1)
+            {
+                SpawnTear(GetRandomMapPosition());
+                float delay = Random.Range(phase1MinDelay, phase1MaxDelay);
+                yield return new WaitForSeconds(delay);
+            }
+            else
+            {
+                SpawnTear(GetNearPlayerPosition());
+                float delay = Random.Range(phase2MinDelay, phase2MaxDelay);
+                yield return new WaitForSeconds(delay);
+            }
         }
     }
 
