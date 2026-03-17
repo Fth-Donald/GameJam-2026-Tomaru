@@ -12,7 +12,7 @@ public class Enemy_Spawner : MonoBehaviour
 
     void Awake()
     {
-        // ”@‰Ê Inspector Ÿ“—Lè“®w’è playerCA©“®Q Player Tag
+        // ï¿½@ï¿½ï¿½ Inspector ï¿½ï¿½ï¿½Lï¿½è“®ï¿½wï¿½ï¿½ playerï¿½Cï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Q Player Tag
         if (player == null)
         {
             GameObject playerObj = GameObject.FindWithTag("Player");
@@ -28,7 +28,7 @@ public class Enemy_Spawner : MonoBehaviour
         }
     }
 
-    // ¶¬šdˆê“Gl
+    // ï¿½ï¿½ï¿½ï¿½ï¿½dï¿½ï¿½Gï¿½l
     public GameObject SpawnEnemy(GameObject enemyPrefab)
     {
         if (enemyPrefab == null)
@@ -49,7 +49,7 @@ public class Enemy_Spawner : MonoBehaviour
         return spawnedEnemy;
     }
 
-    // ˜Aã”¶¬‘½Ç“Gli‹‹ Wave Œn“ŒÄ‹©j
+    // ï¿½Aã”ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç“Gï¿½lï¿½iï¿½ï¿½ Wave ï¿½nï¿½ï¿½ï¿½Ä‹ï¿½ï¿½j
     public IEnumerator SpawnEnemies(GameObject[] enemyPrefabs, int spawnCount, float spawnInterval)
     {
         if (enemyPrefabs == null || enemyPrefabs.Length == 0)
@@ -69,7 +69,7 @@ public class Enemy_Spawner : MonoBehaviour
         }
     }
 
-    // æ“¾Šß‰Æš¢üŠO“Iç¬‹@¶¬ˆÊ’u
+    // ï¿½æ“¾ï¿½ß‰Æšï¿½ï¿½ï¿½ï¿½Oï¿½Iç¬‹@ï¿½ï¿½ï¿½ï¿½ï¿½Ê’u
     public Vector2 GetRandomSpawnPosition()
     {
         if (player == null)
@@ -80,7 +80,7 @@ public class Enemy_Spawner : MonoBehaviour
 
         Vector2 randomDirection = Random.insideUnitCircle.normalized;
 
-        // •Ûè¨™|—C”ğ–Æ‹É¬Œü—Ê
+        // ï¿½ï¿½è¨™|ï¿½ï¿½ï¿½Cï¿½ï¿½Æ‹Éï¿½ï¿½ï¿½ï¿½ï¿½
         if (randomDirection == Vector2.zero)
         {
             randomDirection = Vector2.right;
