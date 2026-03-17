@@ -14,7 +14,7 @@ public class Enemy_WatermelonSlice : Enemy_Base
     public void Init(Enemy_WatermelonBoss bossRef, int initHP)
     {
         boss = bossRef;
-        currentHP = initHP;
+        currentHealth = initHP;
     }
 
     public override void TakeDamage(int damage, Transform attacker)
@@ -25,13 +25,13 @@ public class Enemy_WatermelonSlice : Enemy_Base
         boss.TakeDamageFromSlice(damage, attacker);
 
         // 自己 HP 同步
-        currentHP -= damage;
+        currentHealth -= damage;
 
-        if (currentHP <= 0)
+        if (currentHealth <= 0)
             StartCoroutine(DeathRoutine());
     }
 
-    protected override IEnumerator DeathRoutine()
+    protected IEnumerator DeathRoutine()
     {
         isDead = true;
 
