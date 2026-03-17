@@ -9,6 +9,7 @@ public class BarrierOrbit : MonoBehaviour
     public float punchDistance = 1.5f;
     public float punchSpeed = 10f;
     public float returnSpeed = 6f;
+    public float damage = 1f;
 
     [Header("Flying Attack")]
     public GameObject flyingBarrierPrefab;
@@ -106,6 +107,17 @@ public class BarrierOrbit : MonoBehaviour
         if (projectile != null)
         {
             projectile.Initialize(lastDirection);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collision.gameObject.CompareTag("Enemy")) return;
+        // Debug Log
+        Entity enemy = collision .gameObject.GetComponent<Entity>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage((int)damage, player.transform);
         }
     }
 }

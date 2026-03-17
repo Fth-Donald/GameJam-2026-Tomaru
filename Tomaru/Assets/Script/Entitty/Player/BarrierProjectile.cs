@@ -4,6 +4,7 @@ public class BarrierProjectile : MonoBehaviour
 {
     public float speed = 12f;
     public float lifetime = 2f;
+    public float damage = 1f;
 
     private Vector2 moveDirection;
 
@@ -26,16 +27,14 @@ public class BarrierProjectile : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D obj)
     {
-        int damage = 1;
-        Transform transform = other.transform;
-        if (!other.CompareTag("Enemy")) return;
 
-        Entity entity = other.GetComponent<Entity>();
+        if (!obj.CompareTag("Enemy")) return;
+        Entity entity = obj.GetComponent<Entity>();
         if (entity != null)
         {
-            entity.TakeDamage(damage, transform);
+            entity.TakeDamage((int)damage, transform);
         }
 
         Destroy(gameObject);
