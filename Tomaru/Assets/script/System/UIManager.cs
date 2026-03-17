@@ -12,10 +12,10 @@ public class UIManager: MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
-    //public void GoToSelectScene()
-    //{
-    //    SceneManager.LoadScene("SelectScene");
-    //}
+    public void GoToSelectScene()
+    {
+        SceneManager.LoadScene("SelectScene");
+    }
 
     //////////////////QuitButton/////////////////////////
     public void QuitGame()
