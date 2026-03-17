@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ee0ff87e6a192b4bb8477621c8a247a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  maxHealth: 5
+  moveSpeed: 10
+  maxHealth: 50
   currentHealth: 0
   invincibleTime: 1
   knockbackForce: 6
@@ -177,10 +177,12 @@ MonoBehaviour:
   isKnockedBack: 0
   isInvincible: 0
   contactDamage: 1
-  phase2MoveSpeed: 1.5
-  moveDistance: 3
+  phase2MoveSpeed: 10
+  moveDistance: 20
   puddlePrefab: {fileID: 1522998627015768832, guid: 050c181e83fdc214c89c1e2750d44472, type: 3}
   puddleSpawnInterval: 0.5
+  boundaryPadding: 0.5
+  knockbackStopDuration: 0.2
 --- !u!114 &6179136711174593870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +197,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tearPrefab: {fileID: 7107569873771268164, guid: 61791d90d341fa44d98cfa339b5dcc52, type: 3}
   attackInterval: 2
-  spawnCount: 5
+  spawnCount: 40
   mapRadius: 20
-  nearPlayerRadius: 4
+  phase1MinDelay: 0.1
+  phase1MaxDelay: 0.4
+  nearPlayerRadius: 5
+  phase2MinDelay: 0
+  phase2MaxDelay: 0.8
   spawnHeightOffset: 15

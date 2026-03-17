@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4533119196975045803}
   - component: {fileID: 8715310886945078967}
   - component: {fileID: -3865148951754200532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TearPuddleImpact
   m_TagString: Untagged
   m_Icon: {fileID: 0}

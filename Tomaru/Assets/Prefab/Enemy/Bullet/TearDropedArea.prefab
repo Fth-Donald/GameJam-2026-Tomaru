@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4410270004405154628}
   - component: {fileID: 1845370016431517607}
   - component: {fileID: 3048112249369509102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TearDropedArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}

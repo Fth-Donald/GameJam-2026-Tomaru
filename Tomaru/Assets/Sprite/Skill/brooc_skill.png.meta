@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 543a9c8dc3d07ba42aa56f3633a19555
+guid: a069f6796d668d9418e7a52a7d08c27b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4361945680274326058
-    second: Square Toogle Background_0
+      213: -5251741457386673399
+    second: Designer (1)_0
+  - first:
+      213: -8417920325565874384
+    second: Designer (1)_1
+  - first:
+      213: -3408066966323441884
+    second: Designer (1)_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Square Toogle Background_0
+      name: Designer (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 120
-        height: 120
+        x: 90
+        y: 203
+        width: 760
+        height: 760
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a220d425c7eb88c30800000000000000
-      internalID: 4361945680274326058
+      spriteID: 90b664c28f01e17b0800000000000000
+      internalID: -5251741457386673399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (1)_1
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 611
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ffa1f501a8d2b80800000000000000
+      internalID: -8417920325565874384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (1)_2
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 511
+        width: 125
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f4c8d962d14b0d0800000000000000
+      internalID: -3408066966323441884
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8018f6edd058c6f40a60d62f1d5968bf
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Square Toogle Background_0: 4361945680274326058
+      Designer (1)_0: -5251741457386673399
+      Designer (1)_1: -8417920325565874384
+      Designer (1)_2: -3408066966323441884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
