@@ -5,17 +5,17 @@ public class Enemy_OnionBoss : Enemy_Base
 {
     [Header("Phase 2 Movement")]
     public float phase2MoveSpeed = 1.5f;
-    public float moveDistance = 3f;         // 每段移動距離
+    public float moveDistance = 3f;             // 每段移動距離
 
     [Header("Puddle")]
     public GameObject puddlePrefab;
-    public float puddleSpawnInterval = 0.5f; // 每隔多遠生成一個水灘
+    public float puddleSpawnInterval = 0.5f;    // 每隔多遠生成一個水灘
 
     [Header("Camera Boundary")]
-    public float boundaryPadding = 0.5f;    // 距離邊界的緩衝距離
+    public float boundaryPadding = 0.5f;        // 距離邊界的緩衝距離
 
     [Header("Barrier Collision")]
-    public float knockbackStopDuration = 0.2f; // 被護盾撞到後停下的時間
+    public float knockbackStopDuration = 0.2f;  // 被護盾撞到後停下的時間
 
     // 45度方位（東北、東南、西南、西北）
     readonly Vector2[] phase2Directions = new Vector2[]
@@ -28,8 +28,6 @@ public class Enemy_OnionBoss : Enemy_Base
 
     bool isPhase2 = false;
     public bool IsPhase2 => isPhase2;
-
-    bool isKnockedBack = false;          // 被護盾撞到後的停止狀態
 
     Vector2 moveDirection;
     float distanceTravelled = 0f;
