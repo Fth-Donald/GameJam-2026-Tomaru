@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : Entity
@@ -7,6 +8,8 @@ public class PlayerController : Entity
     [SerializeField] GameObject barrier;
     [SerializeField] GameObject sword;
     private bool usingBarrier = true;
+
+    public Image healthBar;
 
     [Header("Movement")]
     
@@ -33,6 +36,8 @@ public class PlayerController : Entity
         {
             ToggleWeapon();
         }
+
+        //healthBar.fillAmount = currentHealth / maxHealth;
     }
 
     private void FixedUpdate()
