@@ -103,12 +103,12 @@ TextureImporter:
       name: Banana_0
       rect:
         serializedVersion: 2
-        x: 131
-        y: 88
-        width: 835
-        height: 883
+        x: 164
+        y: 301
+        width: 648
+        height: 496
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 624a5a72deaa2ef44946ef42eb880616
     internalID: 0
     vertices: []
     indices: 
