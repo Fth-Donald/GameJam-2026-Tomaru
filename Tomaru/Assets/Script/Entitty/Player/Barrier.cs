@@ -6,7 +6,6 @@ public class BarrierOrbit : MonoBehaviour
     public float orbitRadius = 2.5f;
 
     [Header("Knockback / Punch")]
-    public float knockbackForce = 50f;
     public float punchDistance = 1.5f;
     public float punchSpeed = 10f;
     public float returnSpeed = 6f;
@@ -108,18 +107,5 @@ public class BarrierOrbit : MonoBehaviour
         {
             projectile.Initialize(lastDirection);
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        int damage = 1;
-        
-        if (!other.collider.CompareTag("Enemy")) return;
-        Entity entity = other.collider.GetComponent<Entity>();
-        if (entity != null)
-        {
-            entity.TakeDamage(damage, player.transform);
-        }
-
     }
 }

@@ -2,7 +2,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : Entity
-{   
+{
+    [Header("Movement")]
+    
+
+    
     private Vector2 moveInput;
 
     protected override void Awake()
@@ -20,7 +24,6 @@ public class PlayerController : Entity
 
     private void FixedUpdate()
     {
-        if (isKnockedBack) return;
         rb.linearVelocity = moveInput * moveSpeed;
     }
 

@@ -7,15 +7,13 @@ public class Entity : MonoBehaviour
     public int maxHealth = 5;
     public int currentHealth;
     public float invincibleTime = 1f;
-    public float knockbackForce = 20f;
+    public float knockbackForce = 6f;
     public float deathDelay = 0.3f;
-    public float knockbackDuration = 0.2f;
 
     [Header("Current Status")]
     public bool isDead = false;
-    public bool isKnockedBack = false;
-    public bool isInvincible = false;
-
+    
+    private bool isInvincible = false;
     protected Rigidbody2D rb;
 
     protected virtual void Awake()
@@ -24,12 +22,12 @@ public class Entity : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public virtual void TakeDamage(int damage, Transform attacker)
+    //Entity takes damage
+    public virtual void TakeDamage(int damage,Transform attacker)
     {
-        if (isDead || isInvincible) return;
+        if (isInvincible) return;
 
         currentHealth -= damage;
-
         ApplyKnockback(attacker);
 
         Debug.Log(gameObject.name + " took " + damage + " damage. HP: " + currentHealth);
@@ -44,6 +42,7 @@ public class Entity : MonoBehaviour
         }
     }
 
+    //This controls the invisibility timer of the entity
     private System.Collections.IEnumerator InvincibilityCoroutine()
     {
         isInvincible = true;
@@ -51,6 +50,7 @@ public class Entity : MonoBehaviour
         isInvincible = false;
     }
 
+    //Can be used for heal item and vamp
     public virtual void Heal(float amount)
     {
         if (isDead) return;
@@ -59,34 +59,21 @@ public class Entity : MonoBehaviour
         currentHealth = Mathf.Min(currentHealth, maxHealth);
     }
 
+    //Death
     protected virtual void Die()
     {
         if (isDead) return;
-
-        isDead = true;
         Debug.Log(gameObject.name + " died.");
-        Destroy(gameObject, deathDelay);
+        isDead = true;
+        Destroy(gameObject);
     }
 
+    //KnockBack
     protected void ApplyKnockback(Transform attacker)
     {
-        if (attacker == null || rb == null) return;
-
-        isKnockedBack = true;
-
         Vector2 direction = ((Vector2)transform.position - (Vector2)attacker.position).normalized;
-
-        rb.linearVelocity = direction * knockbackForce;
-        Debug.Log(gameObject.name + " is knocked back ");
-
-        StopCoroutine(nameof(KnockbackRoutine));
-        StartCoroutine(KnockbackRoutine());
-    }
-
-    private System.Collections.IEnumerator KnockbackRoutine()
-    {
-        yield return new WaitForSeconds(knockbackDuration);
-        isKnockedBack = false;
         rb.linearVelocity = Vector2.zero;
+        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
     }
+
 }
