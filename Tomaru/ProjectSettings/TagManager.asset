@@ -8,6 +8,7 @@ TagManager:
   - Barrier
   - ManaSprite
   - HealthSprite
+  - Skill
   layers:
   - Default
   - TransparentFX
