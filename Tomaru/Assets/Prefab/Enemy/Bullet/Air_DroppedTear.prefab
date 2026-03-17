@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4926858887940067534}
   - component: {fileID: 7581020142481088877}
   - component: {fileID: 7641760699741041649}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Air_DroppedTear
   m_TagString: Untagged
   m_Icon: {fileID: 0}

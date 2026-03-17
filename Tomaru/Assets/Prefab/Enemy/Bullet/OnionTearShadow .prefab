@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9096209539786466518}
   - component: {fileID: 7925638367639088433}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'OnionTearShadow '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
