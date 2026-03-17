@@ -10,6 +10,9 @@ public class Enemy_OnionBoss : Enemy_Base
     public GameObject puddlePrefab;
     public float puddleSpawnInterval = 0.5f; // 每隔多遠生成一個水灘
 
+    [Header("Camera Boundary")]
+    public float boundaryPadding = 0.5f;    // 距離邊界的緩衝距離
+
     // 45度方位（東北、東南、西南、西北）
     readonly Vector2[] phase2Directions = new Vector2[]
     {
@@ -27,9 +30,12 @@ public class Enemy_OnionBoss : Enemy_Base
     float puddleDistanceTracker = 0f;
     Vector2 lastPosition;
 
+    Camera mainCam;
+
     protected override void Awake()
     {
         base.Awake();
+        mainCam = Camera.main;
     }
 
     public override void TakeDamage(int damage, Transform attacker)
@@ -71,12 +77,43 @@ public class Enemy_OnionBoss : Enemy_Base
         distanceTravelled = 0f;
     }
 
+    // 取得 Camera 的邊界
+    Bounds GetCameraBounds()
+    {
+        float camHeight = mainCam.orthographicSize;
+        float camWidth = camHeight * mainCam.aspect;
+
+        Vector2 camPos = mainCam.transform.position;
+
+        return new Bounds(camPos, new Vector3(camWidth * 2, camHeight * 2, 0));
+    }
+
     void FixedUpdate()
     {
         if (!isPhase2) return;
 
         // 移動
         rb.linearVelocity = moveDirection * phase2MoveSpeed;
+
+        // 取得 Camera 邊界
+        Bounds bounds = GetCameraBounds();
+
+        float minX = bounds.min.x + boundaryPadding;
+        float maxX = bounds.max.x - boundaryPadding;
+        float minY = bounds.min.y + boundaryPadding;
+        float maxY = bounds.max.y - boundaryPadding;
+
+        // 超出邊界時反方向，重新選擇方向
+        Vector2 pos = transform.position;
+        if (pos.x <= minX || pos.x >= maxX || pos.y <= minY || pos.y >= maxY)
+        {
+            // 把位置夾在邊界內
+            transform.position = new Vector2(
+                Mathf.Clamp(pos.x, minX, maxX),
+                Mathf.Clamp(pos.y, minY, maxY)
+            );
+            PickNewDirection();
+        }
 
         // 累積移動距離
         float frameDist = Vector2.Distance((Vector2)transform.position, lastPosition);
