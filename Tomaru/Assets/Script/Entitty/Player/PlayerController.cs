@@ -17,6 +17,7 @@ public class PlayerController : Entity
 
     private void Update()
     {
+        if (isKnockedBack) return;
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput = moveInput.normalized;
