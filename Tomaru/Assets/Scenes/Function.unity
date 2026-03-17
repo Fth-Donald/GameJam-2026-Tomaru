@@ -131,9 +131,9 @@ GameObject:
   - component: {fileID: 516974375}
   - component: {fileID: 516974374}
   - component: {fileID: 516974372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Type_Swirl
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -498,9 +498,9 @@ GameObject:
   - component: {fileID: 1305430313}
   - component: {fileID: 1305430307}
   - component: {fileID: 1305430312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Type_Stop&Shoot
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -707,9 +707,9 @@ GameObject:
   - component: {fileID: 1533016745}
   - component: {fileID: 1533016744}
   - component: {fileID: 1533016743}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Type_Boss_1_Core
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 1649894496}
   - component: {fileID: 1649894497}
   - component: {fileID: 1649894495}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Swirl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 1998229077}
   - component: {fileID: 1998229082}
   - component: {fileID: 1998229080}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Type_Chase
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1346,9 +1346,9 @@ GameObject:
   - component: {fileID: 2109237473}
   - component: {fileID: 2109237476}
   - component: {fileID: 2109237475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Type_Boss_2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1539,8 +1539,16 @@ PrefabInstance:
       value: Type_Boss_1_Unit
       objectReference: {fileID: 0}
     - target: {fileID: 2567639118810631646, guid: cb07767113052d84ba415123d6891a2c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567639118810631646, guid: cb07767113052d84ba415123d6891a2c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567639118810631646, guid: cb07767113052d84ba415123d6891a2c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
