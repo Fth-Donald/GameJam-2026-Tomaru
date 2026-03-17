@@ -1,12 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
 public class Enemy_Spawner : MonoBehaviour
 {
-    //敌人
-    [Header("Enemy Prefabs")] 
-    public GameObject[] enemyPrefabs;
-
     [Header("Spawn Range")]
     public float minSpawnRadius = 8f;
     public float maxSpawnRadius = 12f;
@@ -16,7 +12,7 @@ public class Enemy_Spawner : MonoBehaviour
 
     void Awake()
     {
-        // 如果 Inspector 沒有手動指定 player，就自動找 Player Tag
+        // �@�� Inspector ���L�蓮�w�� player�C�A�����Q Player Tag
         if (player == null)
         {
             GameObject playerObj = GameObject.FindWithTag("Player");
@@ -32,7 +28,7 @@ public class Enemy_Spawner : MonoBehaviour
         }
     }
 
-    // 生成單一敵人
+    // �����d��G�l
     public GameObject SpawnEnemy(GameObject enemyPrefab)
     {
         if (enemyPrefab == null)
@@ -53,7 +49,7 @@ public class Enemy_Spawner : MonoBehaviour
         return spawnedEnemy;
     }
 
-    // 連續生成多隻敵人（給 Wave 系統呼叫）
+    // �A㔐������ǓG�l�i�� Wave �n���ċ��j
     public IEnumerator SpawnEnemies(GameObject[] enemyPrefabs, int spawnCount, float spawnInterval)
     {
         if (enemyPrefabs == null || enemyPrefabs.Length == 0)
@@ -73,7 +69,7 @@ public class Enemy_Spawner : MonoBehaviour
         }
     }
 
-    // 取得玩家圓周外的隨機生成位置
+    // �擾�߉ƚ����O�I笋@�����ʒu
     public Vector2 GetRandomSpawnPosition()
     {
         if (player == null)
@@ -84,7 +80,7 @@ public class Enemy_Spawner : MonoBehaviour
 
         Vector2 randomDirection = Random.insideUnitCircle.normalized;
 
-        // 保險處理，避免極小向量
+        // ��訙|���C��Ƌɏ�����
         if (randomDirection == Vector2.zero)
         {
             randomDirection = Vector2.right;
