@@ -101,4 +101,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: 8
-  impactPrefab: {fileID: 1522998627015768832, guid: 050c181e83fdc214c89c1e2750d44472, type: 3}
+  impactPrefab: {fileID: 7286570074422583664, guid: 8be195abba191d249b54d9c87349498a, type: 3}

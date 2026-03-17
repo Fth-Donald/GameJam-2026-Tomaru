@@ -152,6 +152,10 @@ PrefabInstance:
       propertyPath: phase2MoveSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 6179136711174593870, guid: 43d6b3f1ba50fb140959aaaf2abf6187, type: 3}
+      propertyPath: nearPlayerRadius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7658457836418640199, guid: 43d6b3f1ba50fb140959aaaf2abf6187, type: 3}
       propertyPath: m_Name
       value: Type_Boss_2
