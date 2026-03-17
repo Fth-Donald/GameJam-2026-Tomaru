@@ -2,6 +2,7 @@
 
 public class WaveScript : MonoBehaviour
 {
+   
     public Enemy_Spawner e_S_Script;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     //需求击杀数
@@ -11,24 +12,18 @@ public class WaveScript : MonoBehaviour
     //波次数
     private int WaveCnt;
     //是否在波次中
-    bool IsWave;
+    bool IsWave=true;
     void EndWave()
     {
-        
-            IsWave = false;
+        IsWave = false;
     }
-
-   //怪物生成
-   void WaveSwapn()
+    void WaveSpawn()
     {
-
+        StartCoroutine(e_S_Script.SpawnEnemies(e_S_Script.enemyPrefabs, 100, 1f));
     }
-    void Update()
+    void Start()
     {
-        if (IsWave)
-        {
-            WaveSwapn();
-        }
+        WaveSpawn();
     }
     public void OnEnemyKilled()
     {
