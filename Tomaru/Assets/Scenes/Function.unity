@@ -929,8 +929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fdf812500f2ae4c90ead385a30604c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbitRadius: 1.5
-  orbitSpeed: 360
+  orbitRadius: 4.5
+  orbitSpeed: 115
 --- !u!212 &1649894496
 SpriteRenderer:
   m_ObjectHideFlags: 0
