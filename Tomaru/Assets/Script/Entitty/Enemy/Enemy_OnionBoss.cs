@@ -39,6 +39,7 @@ public class Enemy_OnionBoss : Enemy_Base
     protected override void Awake()
     {
         base.Awake();
+        rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
         mainCam = Camera.main;
     }
 
@@ -91,6 +92,7 @@ public class Enemy_OnionBoss : Enemy_Base
 
     void EnterPhase2()
     {
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         isPhase2 = true;
         lastPosition = transform.position;
         PickNewDirection();
