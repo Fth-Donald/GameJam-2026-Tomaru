@@ -38,5 +38,4 @@ public class PlayerController : Entity
         gameObject.SetActive(false);
     }
 
-    
 }

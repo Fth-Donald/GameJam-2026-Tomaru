@@ -88,4 +88,6 @@ public class Entity : MonoBehaviour
         isKnockedBack = false;
         rb.linearVelocity = Vector2.zero;
     }
+
+
 }
