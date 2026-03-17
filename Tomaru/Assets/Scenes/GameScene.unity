@@ -198,7 +198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 156, y: 368}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &90817304
@@ -216,7 +216,7 @@ MonoBehaviour:
   timerText: {fileID: 1752787738}
   waveScript: {fileID: 1885223981}
   waveTxtScript: {fileID: 179310987}
-  timeLeft: 20
+  timeLeft: 10
 --- !u!1 &179310985
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443c3b92e7db17d459d98649167aacfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveScript: {fileID: 1885223981}
   timerText: {fileID: 824518303}
 --- !u!1 &214802432
 GameObject:

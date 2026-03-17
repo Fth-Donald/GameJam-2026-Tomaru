@@ -21,15 +21,15 @@ public class WaveScript : MonoBehaviour
         WaveCnt++;
         waveTimerScript.TimerStart();
     }
-    void WaveSpawn()
-    {
-        StartCoroutine(e_S_Script.SpawnEnemies(e_S_Script.enemyPrefabs, WaveCnt*30, 1f));
-    }
-    void Start()
+    public void WaveSpawn()
     {
         KillCnt = 0;
-        WaveSpawn();
+        StartCoroutine(e_S_Script.SpawnEnemies(e_S_Script.enemyPrefabs, 1, 1f));
     }
+    //void Start()
+    //{
+    //    WaveSpawn();
+    //}
     public void OnEnemyKilled()
     {
         KillCnt++;
