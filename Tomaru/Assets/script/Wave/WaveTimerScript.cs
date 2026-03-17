@@ -9,7 +9,7 @@ public class WaveTimerScript : MonoBehaviour
     public WaveTxtScript　waveTxtScript;
     public float timeLeft = 20f; // 倒计时秒数
 
-    private bool isRunning = true;
+    private bool isRunning = false;
 
     void Update()
     {
@@ -39,9 +39,12 @@ public class WaveTimerScript : MonoBehaviour
             timerText.color = Color.red;
         }
     }
-
+    public void TimerStart()
+    {
+        isRunning = true;
+    }
     void TimerEnd()
     {
-        
+        waveTxtScript.WaveStartTxtStart();
     }
 }
