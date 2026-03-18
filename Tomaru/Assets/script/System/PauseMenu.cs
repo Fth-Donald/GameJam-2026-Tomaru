@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
@@ -26,5 +26,9 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
-
+    //////////////////TryAgainButton/////////////////////////
+    public void TryAgain()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
 }
