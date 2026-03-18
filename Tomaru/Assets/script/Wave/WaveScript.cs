@@ -51,9 +51,9 @@ public class WaveScript : MonoBehaviour
         wave2List.Add(e_S_Script.enemyPrefabs[2]);
         wave2List.Add(e_S_Script.enemyPrefabs[4]);
         //3
-        wave3List.Add(e_S_Script.enemyPrefabs[0]);
+        wave3List.Add(e_S_Script.enemyPrefabs[1]);
         wave3List.Add(e_S_Script.enemyPrefabs[5]);
-        wave3List.Add(e_S_Script.enemyPrefabs[3]);
+       // wave3List.Add(e_S_Script.enemyPrefabs[3]);
         //4
         wave4List.Add(e_S_Script.enemyPrefabs[0]);
         wave4List.Add(e_S_Script.enemyPrefabs[4]);
@@ -62,7 +62,7 @@ public class WaveScript : MonoBehaviour
         //5
         wave5List.Add(e_S_Script.enemyPrefabs[0]);
         wave5List.Add(e_S_Script.enemyPrefabs[4]);
-        wave5List.Add(e_S_Script.enemyPrefabs[3]);
+       // wave5List.Add(e_S_Script.enemyPrefabs[3]);
         //6
         wave6List.Add(e_S_Script.enemyPrefabs[1]);
         wave6List.Add(e_S_Script.enemyPrefabs[5]);
@@ -104,17 +104,18 @@ public class WaveScript : MonoBehaviour
                 waveList.Clear();
                 waveList.AddRange(wave5List);
                 enemyNub = 29;
-                TargetKillCnt = enemyNub+1;
+                TargetKillCnt = enemyNub+1+5;
+                StartCoroutine(e_S_Script.SpawnEnemies(Boss1List.ToArray(), 1, 1f));
                 break;
             case 6:
                 waveList.Clear();
                 waveList.AddRange(wave6List);
                 enemyNub = 29;
                 TargetKillCnt = enemyNub + 1;
-                StartCoroutine(e_S_Script.SpawnEnemies(Boss2List.ToArray(), TargetKillCnt, 1f));
+                StartCoroutine(e_S_Script.SpawnEnemies(Boss2List.ToArray(), 1 ,1f));
                 break ;
             default:
-                
+                    
                 break;
         }
        
@@ -125,10 +126,11 @@ public class WaveScript : MonoBehaviour
     {
         KillCnt++;
         Debug.Log("击杀数: ++");
-
+        Debug.Log("KillCnt");
         if (KillCnt >= TargetKillCnt)
         {
             EndWave();
+           
         }
     }
 }

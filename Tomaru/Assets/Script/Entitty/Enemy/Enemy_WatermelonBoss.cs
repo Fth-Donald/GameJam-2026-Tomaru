@@ -7,6 +7,8 @@ public class Enemy_WatermelonBoss : Enemy_Base
     [Header("Phase 2")]
     public GameObject slicePrefab;
     public int sliceCount = 5;
+    public float sliceSpawnRadius = 1.5f;   // 生成位置離 Boss 的距離
+    public float sliceExplosionForce = 8f;  // 爆開初速度
 
     bool isPhase2 = false;
     List<Enemy_WatermelonSlice> activeSlices = new List<Enemy_WatermelonSlice>();
@@ -44,30 +46,33 @@ public class Enemy_WatermelonBoss : Enemy_Base
         if (currentHealth <= 0)
             Die();
     }
-
     void EnterPhase2()
     {
         isPhase2 = true;
 
         Vector2 bossPos = (Vector2)transform.position;
 
-        // ���������Z
         float angleStep = 360f / sliceCount;
 
         for (int i = 0; i < sliceCount; i++)
         {
             float angle = i * angleStep * Mathf.Deg2Rad;
-            Vector2 offset = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
-            Vector2 spawnPos = bossPos + offset;
+            Vector2 direction = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+
+            // 生成位置離 Boss 遠一點
+            Vector2 spawnPos = bossPos + direction * sliceSpawnRadius;
 
             GameObject obj = Instantiate(slicePrefab, spawnPos, Quaternion.identity);
             Enemy_WatermelonSlice slice = obj.GetComponent<Enemy_WatermelonSlice>();
 
             slice.Init(this, currentHealth / sliceCount);
             activeSlices.Add(slice);
+
+            // 給一個向外的初速度，爆開感覺
+            Rigidbody2D sliceRb = obj.GetComponent<Rigidbody2D>();
+            sliceRb.linearVelocity = direction * sliceExplosionForce;
         }
 
-        // �吼�Z����
         Destroy(gameObject);
     }
 

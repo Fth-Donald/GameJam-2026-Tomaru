@@ -12,7 +12,7 @@ public class Enemy_Base : Entity
     protected override void Awake()
     {
         base.Awake();
-        player = GameObject.FindWithTag("Player").transform;
+        player = GameObject.FindWithTag("Player").transform;    
     }
 
     protected Vector2 GetDirectionToPlayer()
@@ -24,7 +24,7 @@ public class Enemy_Base : Entity
     {
         if (isDead) return;
 
-        //wave.OnEnemyKilled();
+        wave.OnEnemyKilled();
 
         base.Die();
 
