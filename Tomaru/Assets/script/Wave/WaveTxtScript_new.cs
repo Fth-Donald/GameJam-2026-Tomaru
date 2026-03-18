@@ -45,7 +45,7 @@ public class WaveTxtScript : MonoBehaviour
         if (WaveStartTxtTimer > 0)
         {
             WaveStartTxtTimer -= Time.deltaTime;
-            scale += 4*Time.deltaTime;
+            //scale += 4*Time.deltaTime;
             timerText.transform.localScale = Vector3.one * scale;
         }
     }
@@ -53,22 +53,22 @@ public class WaveTxtScript : MonoBehaviour
     {
         startEnded = false;
         scale = 1f;
-        timerText.text = "  Start";
-        WaveStartTxtTimer = 1f;
+        timerText.text = "Start";
+        WaveStartTxtTimer = 2f;
     }
     public void WaveCntTxtStart()
     {
         waveEnded = false;
         scale = 1f;
         timerText.gameObject.SetActive(true);
-        WaveTxtTimer = 1f;
+        WaveTxtTimer = 2f;
         timerText.text = "Wave " + waveScript.WaveCnt;
     }
     void UpdateWaveUI()
     {
         if (WaveTxtTimer > 0){
             WaveTxtTimer -= Time.deltaTime;
-            scale += 4 * Time.deltaTime;
+            //scale += 4 * Time.deltaTime;
             timerText.transform.localScale = Vector3.one * scale;
         }
     }
