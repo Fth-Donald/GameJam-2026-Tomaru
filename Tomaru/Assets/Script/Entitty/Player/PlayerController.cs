@@ -9,7 +9,7 @@ public class PlayerController : Entity
     [SerializeField] GameObject sword;
     private bool usingBarrier = true;
 
-    public Image healthBar;
+    public HPScript hPScript;
 
     [Header("Movement")]
     
