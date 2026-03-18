@@ -24,8 +24,10 @@ public class Enemy_Base : Entity
     {
         if (isDead) return;
 
-        wave.OnEnemyKilled();
-        
+        //wave.OnEnemyKilled();
+
         base.Die();
+
+       
     }
 }

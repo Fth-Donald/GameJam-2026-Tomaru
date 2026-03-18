@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6753808090643665557}
   - component: {fileID: 4033725308102854328}
   - component: {fileID: 4686304320662226813}
-  - component: {fileID: 3797971045873178147}
   - component: {fileID: 4159670603315347130}
   m_Layer: 6
   m_Name: Type_Chase
@@ -154,30 +153,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.12390137, y: 0.034179688}
   m_Radius: 1.7932129
---- !u!114 &3797971045873178147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406275305561216138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a21a41cdc0ea8f44c9a2adeacd366e33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4
-  maxHealth: 5
-  currentHealth: 0
-  invincibleTime: 1
-  knockbackForce: 6
-  deathDelay: 0.3
-  knockbackDuration: 0.2
-  isDead: 0
-  isKnockedBack: 0
-  isInvincible: 0
-  contactDamage: 1
-  wave: {fileID: 0}
 --- !u!114 &4159670603315347130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,9 +169,9 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 0
   invincibleTime: 1
-  knockbackForce: 6
+  knockbackForce: 20
   deathDelay: 0.3
-  knockbackDuration: 0.2
+  knockbackDuration: 0.25
   isDead: 0
   isKnockedBack: 0
   isInvincible: 0

@@ -112,9 +112,10 @@ public class BarrierOrbit : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        player = transform.parent;
         if (!collision.gameObject.CompareTag("Enemy")) return;
         // Debug Log
-        Entity enemy = collision .gameObject.GetComponent<Entity>();
+        Enemy_Base enemy = collision.collider.gameObject.GetComponent<Enemy_Base>();
         if (enemy != null)
         {
             enemy.TakeDamage((int)damage, player.transform);

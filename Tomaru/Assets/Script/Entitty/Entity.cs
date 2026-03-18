@@ -17,6 +17,7 @@ public class Entity : MonoBehaviour
     public bool isInvincible = false;
 
     protected Rigidbody2D rb;
+    private Coroutine knockbackCoroutine;
 
     protected virtual void Awake()
     {
@@ -29,9 +30,10 @@ public class Entity : MonoBehaviour
         if (isDead || isInvincible) return;
 
         currentHealth -= damage;
-        ApplyKnockback(attacker);
 
-        Debug.Log(gameObject.name + " took " + damage + " damage. HP: " + currentHealth);
+        Debug.Log($"{gameObject.name} took {damage} damage from {(attacker != null ? attacker.name : "null")}");
+
+        ApplyKnockback(attacker);
 
         if (currentHealth <= 0)
         {
@@ -50,14 +52,6 @@ public class Entity : MonoBehaviour
         isInvincible = false;
     }
 
-    public virtual void Heal(float amount)
-    {
-        if (isDead) return;
-
-        currentHealth += (int)amount;
-        currentHealth = Mathf.Min(currentHealth, maxHealth);
-    }
-
     protected virtual void Die()
     {
         if (isDead) return;
@@ -71,29 +65,35 @@ public class Entity : MonoBehaviour
     {
         if (attacker == null || rb == null) return;
 
-        isKnockedBack = true;
-
         Vector2 direction = ((Vector2)transform.position - (Vector2)attacker.position).normalized;
 
+        Debug.Log($"{gameObject.name} knockback direction: {direction}");
+
+        if (knockbackCoroutine != null)
+        {
+            StopCoroutine(knockbackCoroutine);
+        }
+
+        knockbackCoroutine = StartCoroutine(KnockbackRoutine(direction));
+    }
+
+    //protected virtual void FixedUpdate()
+    //{
+    //}
+
+    private System.Collections.IEnumerator KnockbackRoutine(Vector2 direction)
+    {
+        isKnockedBack = true;
+
+        rb.linearVelocity = Vector2.zero;
         rb.linearVelocity = direction * knockbackForce;
+
         Debug.Log(gameObject.name + " is knocked back.");
 
-        StopCoroutine(nameof(KnockbackRoutine));
-        StartCoroutine(KnockbackRoutine());
-    }
-
-    //Stop the entity while knocked back
-    protected virtual void FixedUpdate()
-    {
-        if(isKnockedBack) return;  
-    }
-
-    private System.Collections.IEnumerator KnockbackRoutine()
-    {
         yield return new WaitForSeconds(knockbackDuration);
-        isKnockedBack = false;
+
         rb.linearVelocity = Vector2.zero;
+        isKnockedBack = false;
+        knockbackCoroutine = null;
     }
-
-
 }

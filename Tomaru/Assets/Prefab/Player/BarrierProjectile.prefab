@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 6537602573164100071}
   - component: {fileID: 1283853913241852845}
   - component: {fileID: 8187802509408865234}
-  - component: {fileID: 8666348482078996817}
   - component: {fileID: 4656278330890190626}
+  - component: {fileID: -2560567936814352917}
   m_Layer: 0
   m_Name: BarrierProjectile
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1292425617964536230, guid: a33a5b9911481ec4690bb2bfbd191f6a, type: 3}
+  m_Sprite: {fileID: 2389193319765324094, guid: 5897f70019e24024bbec1f2acbbaf695, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -117,8 +117,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &8666348482078996817
-BoxCollider2D:
+--- !u!114 &4656278330890190626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6015209685572169484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fed8083cdf979340a24f197b758d6ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 12
+  lifetime: 2
+  damage: 2
+--- !u!70 &-2560567936814352917
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -152,29 +167,5 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.62, y: 9.5}
-    newSize: {x: 3.62, y: 9.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.62, y: 9.5}
-  m_EdgeRadius: 0
---- !u!114 &4656278330890190626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6015209685572169484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fed8083cdf979340a24f197b758d6ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 12
-  lifetime: 2
-  damage: 2
+  m_Size: {x: 3.16, y: 9.52}
+  m_Direction: 0

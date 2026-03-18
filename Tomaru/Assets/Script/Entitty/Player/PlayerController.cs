@@ -11,10 +11,18 @@ public class PlayerController : Entity
 
     public Image healthBar;
 
-    [Header("Movement")]
-    
+    //SKILLS
+    int skill1 = 0;
+    int skill2 = 0;
 
-    
+    [Header("BerrySkill")]
+    public bool bspicked = false;
+    //public bool btriggered = false;
+    public float eTime = 10f;
+    public float nSpeed = 100f;
+
+
+
     private Vector2 moveInput;
 
     protected override void Awake()
@@ -30,6 +38,15 @@ public class PlayerController : Entity
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput = moveInput.normalized;
+        //Use Skill
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (bspicked)
+            {
+                BerrySkill();
+            }
+        }
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -39,9 +56,9 @@ public class PlayerController : Entity
         //healthBar.fillAmount = currentHealth / maxHealth;
     }
 
-    protected override void FixedUpdate()
+    protected void FixedUpdate()
     {
-        base.FixedUpdate();
+        if (isDead || isKnockedBack) return;
         rb.linearVelocity = moveInput * moveSpeed;
     }
 
@@ -79,6 +96,23 @@ public class PlayerController : Entity
     {
         barrier.SetActive(false);
         sword.SetActive(true);
+    }
+
+    private void BerrySkill()
+    {
+        bspicked = false;
+        StartCoroutine(BerrySkillRoutine());
+    }
+
+    private System.Collections.IEnumerator BerrySkillRoutine()
+    {
+        float originalSpeed = moveSpeed;
+
+        moveSpeed = nSpeed;
+
+        yield return new WaitForSeconds(eTime);
+
+        moveSpeed = originalSpeed;
     }
 
 }

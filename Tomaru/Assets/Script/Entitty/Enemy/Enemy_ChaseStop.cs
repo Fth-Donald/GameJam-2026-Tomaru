@@ -13,9 +13,9 @@ public class Enemy_ChaseStop : Enemy_Base
         base.Awake();
     }
 
-    protected override void FixedUpdate()
+    protected void FixedUpdate()
     {
-        base.FixedUpdate();
+        if (isDead || isKnockedBack) return;
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= stopRange)

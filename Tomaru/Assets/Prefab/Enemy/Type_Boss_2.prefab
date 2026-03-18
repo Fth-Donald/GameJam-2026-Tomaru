@@ -169,7 +169,7 @@ MonoBehaviour:
   moveSpeed: 10
   maxHealth: 50
   currentHealth: 0
-  invincibleTime: 1
+  invincibleTime: 0
   knockbackForce: 6
   deathDelay: 0.3
   knockbackDuration: 0.2

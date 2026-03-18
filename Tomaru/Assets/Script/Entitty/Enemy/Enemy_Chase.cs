@@ -8,19 +8,21 @@ public class Enemy_Chase : Enemy_Base
     }
 
     // Chase player
-    protected override void FixedUpdate()
+    protected void FixedUpdate()
     {
-        base.FixedUpdate();
+        if (isDead || isKnockedBack) return;
         // calculate direction + move
         rb.linearVelocity = GetDirectionToPlayer() * moveSpeed;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        PlayerController player = collision.collider.GetComponent<PlayerController>();
         // Debug Log
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Hit Player");
+            player.TakeDamage(contactDamage,transform);
         }
     }
 }

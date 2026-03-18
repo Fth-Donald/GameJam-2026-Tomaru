@@ -113,11 +113,14 @@ public class Enemy_OnionBoss : Enemy_Base
         return new Bounds(camPos, new Vector3(camWidth * 2, camHeight * 2, 0));
     }
 
-    protected override void FixedUpdate()
+    protected void FixedUpdate()
     {
-        base.FixedUpdate();
         if (!isPhase2) return;
-        if (isKnockedBack) return;
+        if (isDead || isKnockedBack)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
 
         // 移動
         rb.linearVelocity = moveDirection * phase2MoveSpeed;
