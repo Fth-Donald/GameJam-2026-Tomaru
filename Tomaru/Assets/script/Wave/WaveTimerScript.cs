@@ -52,6 +52,6 @@ public class WaveTimerScript : MonoBehaviour
     void TimerEnd()
     {
         timerText.gameObject.SetActive(false);
-        waveTxtScript.WaveStartTxtStart();
+        waveTxtScript.WaveCntTxtStart();
     }
 }
