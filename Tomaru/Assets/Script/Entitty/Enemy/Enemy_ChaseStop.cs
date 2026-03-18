@@ -13,8 +13,9 @@ public class Enemy_ChaseStop : Enemy_Base
         base.Awake();
     }
 
-    void FixedUpdate()
+    protected override void FixedUpdate()
     {
+        base.FixedUpdate();
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= stopRange)

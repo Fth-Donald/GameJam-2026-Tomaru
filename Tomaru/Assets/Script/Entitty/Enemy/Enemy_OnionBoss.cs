@@ -113,8 +113,9 @@ public class Enemy_OnionBoss : Enemy_Base
         return new Bounds(camPos, new Vector3(camWidth * 2, camHeight * 2, 0));
     }
 
-    void FixedUpdate()
+    protected override void FixedUpdate()
     {
+        base.FixedUpdate();
         if (!isPhase2) return;
         if (isKnockedBack) return;
 

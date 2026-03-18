@@ -26,7 +26,6 @@ public class Enemy_Base : Entity
 
         wave.OnEnemyKilled();
         
-
         base.Die();
     }
 }

@@ -27,7 +27,6 @@ public class PlayerController : Entity
 
     private void Update()
     {
-        if (isKnockedBack) return;
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput = moveInput.normalized;
@@ -40,8 +39,9 @@ public class PlayerController : Entity
         //healthBar.fillAmount = currentHealth / maxHealth;
     }
 
-    private void FixedUpdate()
+    protected override void FixedUpdate()
     {
+        base.FixedUpdate();
         rb.linearVelocity = moveInput * moveSpeed;
     }
 

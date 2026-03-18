@@ -82,6 +82,12 @@ public class Entity : MonoBehaviour
         StartCoroutine(KnockbackRoutine());
     }
 
+    //Stop the entity while knocked back
+    protected virtual void FixedUpdate()
+    {
+        if(isKnockedBack) return;  
+    }
+
     private System.Collections.IEnumerator KnockbackRoutine()
     {
         yield return new WaitForSeconds(knockbackDuration);

@@ -8,8 +8,9 @@ public class Enemy_Chase : Enemy_Base
     }
 
     // Chase player
-    void FixedUpdate()
+    protected override void FixedUpdate()
     {
+        base.FixedUpdate();
         // calculate direction + move
         rb.linearVelocity = GetDirectionToPlayer() * moveSpeed;
     }
