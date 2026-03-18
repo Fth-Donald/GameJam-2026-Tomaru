@@ -46,7 +46,7 @@ public class PlayerController : Entity
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput = moveInput.normalized;
         //Use Skill
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             switch (skill1)
             {
@@ -65,7 +65,7 @@ public class PlayerController : Entity
                     break;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             switch (skill2)
             {
