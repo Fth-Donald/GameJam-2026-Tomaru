@@ -180,3 +180,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   lifetime: 3
+  hitDelay: 0.1
