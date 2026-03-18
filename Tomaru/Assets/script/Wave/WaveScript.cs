@@ -51,7 +51,7 @@ public class WaveScript : MonoBehaviour
         wave2List.Add(e_S_Script.enemyPrefabs[2]);
         wave2List.Add(e_S_Script.enemyPrefabs[4]);
         //3
-        wave3List.Add(e_S_Script.enemyPrefabs[0]);
+        wave3List.Add(e_S_Script.enemyPrefabs[1]);
         wave3List.Add(e_S_Script.enemyPrefabs[5]);
         wave3List.Add(e_S_Script.enemyPrefabs[3]);
         //4
@@ -114,7 +114,7 @@ public class WaveScript : MonoBehaviour
                 StartCoroutine(e_S_Script.SpawnEnemies(Boss2List.ToArray(), TargetKillCnt, 1f));
                 break ;
             default:
-                
+                    
                 break;
         }
        
