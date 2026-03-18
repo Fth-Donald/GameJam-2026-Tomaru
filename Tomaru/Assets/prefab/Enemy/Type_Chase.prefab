@@ -174,7 +174,7 @@ MonoBehaviour:
   deathDelay: 0.3
   knockbackDuration: 0.2
   isDead: 0
-  isKnockedBack: 0
+  isKnockedBack: 1
   isInvincible: 0
   sfx: {fileID: 0}
   contactDamage: 1
