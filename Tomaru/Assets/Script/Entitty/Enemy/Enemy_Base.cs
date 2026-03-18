@@ -5,6 +5,7 @@ public class Enemy_Base : Entity
 {
     [Header("Stats")]
     public int contactDamage = 1;
+    public GameObject[] dropPrefabs;
     protected Transform player;
 
     public WaveScript wave;
@@ -23,11 +24,23 @@ public class Enemy_Base : Entity
     protected override void Die()
     {
         if (isDead) return;
-
+        SpawnDrop();
         //wave.OnEnemyKilled();
 
         base.Die();
 
        
+    }
+    public void SpawnDrop()
+    {
+        if (dropPrefabs.Length == 0) return;
+
+        int index = Random.Range(0, dropPrefabs.Length * 3);
+
+        Instantiate(
+            dropPrefabs[index],
+            transform.position,
+            Quaternion.identity
+        );
     }
 }
