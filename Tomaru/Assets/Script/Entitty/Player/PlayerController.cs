@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : Entity
@@ -8,19 +6,29 @@ public class PlayerController : Entity
     [SerializeField] GameObject barrier;
     [SerializeField] GameObject sword;
     private bool usingBarrier = true;
-
     public HPScript hPScript;
 
     //SKILLS
-    int skill1 = 0;
-    int skill2 = 0;
+    public int skill1 = 0;
+    public int skill2 = 0;
+
 
     [Header("BerrySkill")]
-    public bool bspicked = false;
-    //public bool btriggered = false;
-    public float eTime = 10f;
-    public float nSpeed = 100f;
+    //Berry skill is skill no 1
+    public float fTime = 10f;
+    public float fSpeed = 50f;
 
+
+
+    [Header("BroccoliSkill")]
+    //Broccoli skill is skill no 3
+    public bool dshoot = false;
+    public float shootTime = 10f;
+
+    [Header("BananaSkill")]
+    //Banana skill is skill no 4
+    public bool sshoot = false;
+    public float sTime = 10f;
 
 
     private Vector2 moveInput;
@@ -29,7 +37,6 @@ public class PlayerController : Entity
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
-
         EquipBarrier();
     }
 
@@ -41,9 +48,40 @@ public class PlayerController : Entity
         //Use Skill
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (bspicked)
+            switch (skill1)
             {
-                BerrySkill();
+                case 1:
+                    BerrySkill(1);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    BroccoliSkill(1);
+                    break;
+                case 4:
+                    BananaSkill(1);
+                    break;
+                case 0:
+                    break;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            switch (skill2)
+            {
+                case 1:
+                    BerrySkill(2);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    BroccoliSkill(2);
+                    break;
+                case 4:
+                    BananaSkill(2);
+                    break;
+                case 0:
+                    break;
             }
         }
 
@@ -98,9 +136,18 @@ public class PlayerController : Entity
         sword.SetActive(true);
     }
 
-    private void BerrySkill()
+
+    //BERRY
+    private void BerrySkill(int s)
     {
-        bspicked = false;
+        if (s == 1)
+        {
+            skill1 = 0;
+        }
+        else if (s == 2)
+        {
+            skill2 = 0;
+        }
         StartCoroutine(BerrySkillRoutine());
     }
 
@@ -108,11 +155,59 @@ public class PlayerController : Entity
     {
         float originalSpeed = moveSpeed;
 
-        moveSpeed = nSpeed;
+        moveSpeed = fSpeed;
 
-        yield return new WaitForSeconds(eTime);
+        yield return new WaitForSeconds(fTime);
 
         moveSpeed = originalSpeed;
+    }
+
+
+    //BROCCOLI
+        private void BroccoliSkill(int s)
+    {
+        if (s == 1)
+        {
+            skill1 = 0;
+        }
+        else if (s == 2)
+        {
+            skill2 = 0;
+        }
+        StartCoroutine(BroccoliSkillRoutine());
+    }
+
+    private System.Collections.IEnumerator BroccoliSkillRoutine()
+    {
+        dshoot = true;
+
+        yield return new WaitForSeconds(shootTime);
+
+        dshoot = false;
+    }
+
+
+    //BANANA
+    private void BananaSkill(int s)
+    {
+        if (s == 1)
+        {
+            skill1 = 0;
+        }
+        else if (s == 2)
+        {
+            skill2 = 0;
+        }
+        StartCoroutine(BananaSkillRoutine());
+    }
+
+    private System.Collections.IEnumerator BananaSkillRoutine()
+    {
+        sshoot = true;
+
+        yield return new WaitForSeconds(shootTime);
+
+        sshoot = false;
     }
 
 }
