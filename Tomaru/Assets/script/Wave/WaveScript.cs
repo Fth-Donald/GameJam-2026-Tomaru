@@ -43,6 +43,8 @@ public class WaveScript : MonoBehaviour
         if (lastWave == true)
         {
             win.SetActive(true);
+            Time.timeScale = 0f;
+            Debug.Log("pause");
         }
 
         else if (WaveCnt < WaveLimit)

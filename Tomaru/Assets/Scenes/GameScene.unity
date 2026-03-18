@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 752442716}
   - component: {fileID: 752442715}
   m_Layer: 5
-  m_Name: WaveStartTxt
+  m_Name: TutorTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -764,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 686, y: -480}
+  m_AnchoredPosition: {x: 670, y: -445}
   m_SizeDelta: {x: 573.3558, y: 191.1187}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752442715
@@ -791,7 +791,10 @@ MonoBehaviour:
 
     LeftClick : Attack
 
-    RightClick : Skill
+    RightClick : Shoot
+
+    Q , E
+    : Skill
 
 '
   m_isRightToLeft: 0
@@ -1196,6 +1199,7 @@ MonoBehaviour:
   - {fileID: 2800028859745874852, guid: dc018c872d905a840962df227219a3b1, type: 3}
   - {fileID: 2730081745544980029, guid: 57f2b538dd2cb5b43867a4dfa7e28e3b, type: 3}
   - {fileID: 1371220200412964178, guid: 5eff5c21537936243b944faa1264eda8, type: 3}
+  - {fileID: 2800028859745874852, guid: f13bcd1f664e59a4f9590309bc6340a6, type: 3}
   skillIcons:
   - {fileID: 0}
   - {fileID: 1368519161191829812, guid: a1af652b671f1c2469135820696e082d, type: 3}
@@ -1433,7 +1437,7 @@ MonoBehaviour:
   - {fileID: 7658457836418640199, guid: 43d6b3f1ba50fb140959aaaf2abf6187, type: 3}
   minSpawnRadius: 8
   maxSpawnRadius: 12
-  player: {fileID: 2210045060756823045, guid: 4eade72fec12a4547adc526be5a11cd5, type: 3}
+  player: {fileID: 1161331454}
   waveScript: {fileID: 1885223981}
 --- !u!1 &1176685390
 GameObject:
@@ -2616,7 +2620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7f4e0bf2f031e54da1bbcaedd79eb05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 1581564297}
   win: {fileID: 989520818}
   lastWave: 0
   e_S_Script: {fileID: 1165649127}
