@@ -40,7 +40,8 @@ public class Entity : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-            sfx.PlayRandom(0, 6);
+            if (sfx != null) sfx.PlayRandom(0, 6);
+            //sfx.PlayRandom(0, 6);
         }
         else
         {
