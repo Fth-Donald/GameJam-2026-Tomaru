@@ -109,7 +109,7 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 0
   invincibleTime: 1
-  knockbackForce: 6
+  knockbackForce: 15
   deathDelay: 0.3
   knockbackDuration: 0.2
   isDead: 0
