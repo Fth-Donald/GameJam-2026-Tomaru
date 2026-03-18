@@ -6,7 +6,13 @@ public class Enemy_Base : Entity
     [Header("Stats")]
     public int contactDamage = 1;
     protected Transform player;
+
+    [Header("Drops")]
     public GameObject[] dropPrefabs;
+
+    [Range(0f, 1f)]
+    public float dropChance = 0.25f; // 25% chance
+
     public WaveScript wave;
 
     protected override void Awake()
@@ -24,17 +30,20 @@ public class Enemy_Base : Entity
     {
         if (isDead) return;
 
+        SpawnDrop();
         wave.OnEnemyKilled();
 
         base.Die();
-
-
     }
+
     public void SpawnDrop()
     {
-        if (dropPrefabs.Length == 0) return;
+        if (dropPrefabs == null || dropPrefabs.Length == 0) return;
 
-        int index = Random.Range(0, dropPrefabs.Length*4);
+        // roll whether to drop at all
+        if (Random.value > dropChance) return;
+
+        int index = Random.Range(0, dropPrefabs.Length);
 
         Instantiate(
             dropPrefabs[index],
