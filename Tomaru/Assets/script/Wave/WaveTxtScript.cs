@@ -53,7 +53,7 @@ public class WaveTxtScript : MonoBehaviour
     {
         startEnded = false;
         scale = 1f;
-        timerText.text = "Start";
+        timerText.text = "  Start";
         WaveStartTxtTimer = 1f;
     }
     public void WaveCntTxtStart()

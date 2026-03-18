@@ -14,12 +14,22 @@ public class WaveScript : MonoBehaviour
     public int WaveCnt;
     //是否在波次中
     bool IsWave=true;
-
+    //故事波次上限
+    public int StoryLimit;
+    //波次上限
+    private int WaveLimit=10;
     void EndWave()
     {
         IsWave = false;
         WaveCnt++;
-        waveTimerScript.TimerStart();
+        if (WaveCnt < WaveLimit)
+            waveTimerScript.TimerStart();
+        else
+        {
+            Debug.Log("win!");
+        }
+        
+
     }
     public void WaveSpawn()
     {
