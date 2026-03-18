@@ -1513,6 +1513,13 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 1406275305561216138, guid: ff902fb6031cdd64aa76992c3592f565, type: 3}
   - {fileID: 6518103126505757336, guid: 88f65220addfbc8499f87e2ba448977d, type: 3}
+  - {fileID: 1406275305561216138, guid: c6627820bb31c704fa01d6185fa8cbca, type: 3}
+  - {fileID: 391936884096150866, guid: 02287e0519dd39a44aa0d9d2b69abec7, type: 3}
+  - {fileID: 4424019833144173239, guid: 15722d47995ea9c42b7563f9e9b975fe, type: 3}
+  - {fileID: 8204255054960722899, guid: 0da42a7e41fe5a04c9ac06f3f8bed4c9, type: 3}
+  - {fileID: 4207073115092477960, guid: 37aabebde27cdcb4b8dccd13c7e363b9, type: 3}
+  - {fileID: 2567639118810631646, guid: 2c7a3498cb1659c41804a3cf169b1db5, type: 3}
+  - {fileID: 7658457836418640199, guid: 43d6b3f1ba50fb140959aaaf2abf6187, type: 3}
   minSpawnRadius: 8
   maxSpawnRadius: 12
   player: {fileID: 2210045060756823045, guid: 4eade72fec12a4547adc526be5a11cd5, type: 3}
