@@ -420,6 +420,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 332506670}
     - target: {fileID: 4738495308152300643, guid: 4eade72fec12a4547adc526be5a11cd5, type: 3}
+      propertyPath: LoseUI
+      value: 
+      objectReference: {fileID: 1843951934}
+    - target: {fileID: 4738495308152300643, guid: 4eade72fec12a4547adc526be5a11cd5, type: 3}
       propertyPath: source
       value: 
       objectReference: {fileID: 749250922}
@@ -2742,6 +2746,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752787736}
   m_CullTransparentMesh: 1
+--- !u!1 &1843951934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187063583971764649, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+  m_PrefabInstance: {fileID: 404892850475167349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1885223980
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,6 +3122,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 428658397999422843, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428658397999422843, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 506299737228855589, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: m_Name
       value: System
@@ -3165,6 +3182,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2be7b70e984b51444aca9c12ae4723a7, type: 3}
+    - target: {fileID: 3187063583971764649, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3944911232171435610, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3172,6 +3193,14 @@ PrefabInstance:
     - target: {fileID: 3944911232171435610, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToTitleScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545390956779610427, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693220133242310178, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4730814441748808230, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: m_Type
@@ -3309,6 +3338,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6328765774465363114, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328765774465363114, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6947307179790345191, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: m_Transition
       value: 2
@@ -3324,6 +3361,10 @@ PrefabInstance:
     - target: {fileID: 6947307179790345191, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ContinueButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408578703212842004, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_Name
+      value: Image
       objectReference: {fileID: 0}
     - target: {fileID: 7817632926029524609, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: pauseManager
@@ -3364,6 +3405,10 @@ PrefabInstance:
     - target: {fileID: 8019699109562812597, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224774480538737258, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7882353
       objectReference: {fileID: 0}
     - target: {fileID: 8410629516804400636, guid: e4797f647d1acf94dac3abb6c124d99d, type: 3}
       propertyPath: m_AnchoredPosition.x

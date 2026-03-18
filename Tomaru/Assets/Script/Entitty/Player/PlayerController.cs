@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : Entity
 {
+    [SerializeField] GameObject LoseUI;
+
     [SerializeField] GameObject barrier;
     [SerializeField] GameObject sword;
     private bool usingBarrier = true;
@@ -17,8 +19,6 @@ public class PlayerController : Entity
     //Berry skill is skill no 1
     public float fTime = 10f;
     public float fSpeed = 50f;
-
-
 
     [Header("BroccoliSkill")]
     //Broccoli skill is skill no 3
@@ -108,6 +108,7 @@ public class PlayerController : Entity
         rb.linearVelocity = Vector2.zero;
         Debug.Log("Game Over");
         gameObject.SetActive(false);
+        LoseUI.SetActive(true);
     }
 
     private void ToggleWeapon()
