@@ -18,7 +18,7 @@ public class PlayerController : Entity
     [Header("BerrySkill")]
     //Berry skill is skill no 1
     public float fTime = 10f;
-    public float fSpeed = 50f;
+    public float fSpeed = 25f;
 
     [Header("BroccoliSkill")]
     //Broccoli skill is skill no 3
