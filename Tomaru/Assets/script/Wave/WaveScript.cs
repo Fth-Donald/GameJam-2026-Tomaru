@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class WaveScript : MonoBehaviour
 {
+    public Entity entity;
+
     [SerializeField] GameObject win;
     public bool lastWave = false;
 
@@ -10,17 +12,17 @@ public class WaveScript : MonoBehaviour
     public WaveTimerScript waveTimerScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private int enemyNub;
-    //ù‹??”
+    //???????h
     private int TargetKillCnt;
-    //??”
+    //???h
     private int KillCnt=0;
-    //”gŸ”
+    //hg???h
     public int WaveCnt=1;
-    //¥”Ûİ”gŸ’†
+    //??h???hg??fõ
     bool IsWave=true;
-    //ŒÌ–”gŸãŒÀ
+    //????hg??????
     public int StoryLimit;
-    //”gŸãŒÀ
+    //hg??????
     private int WaveLimit=10;
     List<GameObject> waveList = new List<GameObject>();
     List<GameObject> wave1List = new List<GameObject>();
@@ -33,6 +35,8 @@ public class WaveScript : MonoBehaviour
     List<GameObject> Boss2List = new List<GameObject>();
     void EndWave()
     {
+        entity.currentHealth = entity.maxHealth;
+
         IsWave = false;
         WaveCnt++;
 
@@ -134,7 +138,7 @@ public class WaveScript : MonoBehaviour
     public void OnEnemyKilled()
     {
         KillCnt++;
-        Debug.Log("??”: ++");
+        Debug.Log("???h: ++");
         Debug.Log("KillCnt");
         if (KillCnt >= TargetKillCnt)
         {
