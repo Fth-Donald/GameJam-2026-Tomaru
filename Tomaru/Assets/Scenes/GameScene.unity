@@ -1582,7 +1582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 4424019833144173239, guid: 15722d47995ea9c42b7563f9e9b975fe, type: 3}
+  - {fileID: 8204255054960722899, guid: c83f857312ab6fc4da4e467e27ac7155, type: 3}
   - {fileID: 8204255054960722899, guid: 0da42a7e41fe5a04c9ac06f3f8bed4c9, type: 3}
   - {fileID: 7112852531648126064, guid: 4cbded605c0ffc142803111b284f896c, type: 3}
   - {fileID: 391936884096150866, guid: 02287e0519dd39a44aa0d9d2b69abec7, type: 3}
