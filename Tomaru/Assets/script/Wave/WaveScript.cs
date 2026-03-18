@@ -7,8 +7,9 @@ public class WaveScript : MonoBehaviour
     public Enemy_Spawner e_S_Script;
     public WaveTimerScript waveTimerScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private int enemyNub;
     //需求击杀数
-    public int TargetKillCnt;
+    private int TargetKillCnt;
     //击杀数
     private int KillCnt=0;
     //波次数
@@ -26,8 +27,8 @@ public class WaveScript : MonoBehaviour
     List<GameObject> wave4List = new List<GameObject>();
     List<GameObject> wave5List = new List<GameObject>();
     List<GameObject> wave6List = new List<GameObject>();
-    List<GameObject> wave7List = new List<GameObject>();
-    List<GameObject> wave8List = new List<GameObject>();
+    List<GameObject> Boss1List = new List<GameObject>();
+    List<GameObject> Boss2List = new List<GameObject>();
     void EndWave()
     {
         IsWave = false;
@@ -50,7 +51,7 @@ public class WaveScript : MonoBehaviour
         wave2List.Add(e_S_Script.enemyPrefabs[2]);
         wave2List.Add(e_S_Script.enemyPrefabs[4]);
         //3
-        wave3List.Add(e_S_Script.enemyPrefabs[0]);
+        wave3List.Add(e_S_Script.enemyPrefabs[1]);
         wave3List.Add(e_S_Script.enemyPrefabs[5]);
         wave3List.Add(e_S_Script.enemyPrefabs[3]);
         //4
@@ -62,12 +63,13 @@ public class WaveScript : MonoBehaviour
         wave5List.Add(e_S_Script.enemyPrefabs[0]);
         wave5List.Add(e_S_Script.enemyPrefabs[4]);
         wave5List.Add(e_S_Script.enemyPrefabs[3]);
-        wave5List.Add(e_S_Script.enemyPrefabs[6]);
         //6
         wave6List.Add(e_S_Script.enemyPrefabs[1]);
         wave6List.Add(e_S_Script.enemyPrefabs[5]);
         wave6List.Add(e_S_Script.enemyPrefabs[2]);
-        wave6List.Add(e_S_Script.enemyPrefabs[7]);
+        //boss
+        Boss1List.Add(e_S_Script.enemyPrefabs[6]);
+        Boss2List.Add(e_S_Script.enemyPrefabs[7]);
     }
     public void WaveSpawn()
     {
@@ -77,33 +79,46 @@ public class WaveScript : MonoBehaviour
             case 1:
                 waveList.Clear();
                 waveList.AddRange(wave1List);
+                enemyNub = 30;
+                TargetKillCnt = enemyNub;
                 break;
             case 2:
                 waveList.Clear();
                 waveList.AddRange(wave2List);
+                enemyNub = 50;
+                TargetKillCnt = enemyNub;
                 break;
             case 3:
                 waveList.Clear();
                 waveList.AddRange(wave3List);
+                enemyNub = 50;
+                TargetKillCnt = enemyNub;
                 break;
             case 4:
                 waveList.Clear();
                 waveList.AddRange(wave4List);
+                enemyNub = 60;
+                TargetKillCnt = enemyNub;
                 break;
-                case 5:
+            case 5:
                 waveList.Clear();
                 waveList.AddRange(wave5List);
+                enemyNub = 29;
+                TargetKillCnt = enemyNub+1;
                 break;
-                case 6:
+            case 6:
                 waveList.Clear();
                 waveList.AddRange(wave6List);
+                enemyNub = 29;
+                TargetKillCnt = enemyNub + 1;
+                StartCoroutine(e_S_Script.SpawnEnemies(Boss2List.ToArray(), TargetKillCnt, 1f));
                 break ;
             default:
-                
+                    
                 break;
         }
        
-        StartCoroutine(e_S_Script.SpawnEnemies(waveList.ToArray(), TargetKillCnt*WaveCnt, 1f));
+        StartCoroutine(e_S_Script.SpawnEnemies(waveList.ToArray(), TargetKillCnt, 1f));
     }
     
     public void OnEnemyKilled()
@@ -111,7 +126,7 @@ public class WaveScript : MonoBehaviour
         KillCnt++;
         Debug.Log("击杀数: ++");
 
-        if (KillCnt >= TargetKillCnt * WaveCnt)
+        if (KillCnt >= TargetKillCnt)
         {
             EndWave();
         }

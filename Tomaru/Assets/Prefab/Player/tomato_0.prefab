@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 2210045060756823045}
   - component: {fileID: 6150226573508147849}
   - component: {fileID: 8733777188634100547}
-  - component: {fileID: 4738495308152300643}
   - component: {fileID: 7434513971568819740}
+  - component: {fileID: 4738495308152300643}
+  - component: {fileID: 769006460132032343}
   m_Layer: 0
   m_Name: tomato_0
   m_TagString: Player
@@ -244,34 +245,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4738495308152300643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2692601533222051583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4929b8637dc66b043b80826648b915b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  maxHealth: 10
-  currentHealth: 0
-  invincibleTime: 0.5
-  knockbackForce: 20
-  deathDelay: 0.3
-  knockbackDuration: 0.2
-  isDead: 0
-  isKnockedBack: 0
-  isInvincible: 0
-  barrier: {fileID: 5718324800508526959}
-  sword: {fileID: 3055331439791449503}
-  hPScript: {fileID: 0}
-  bspicked: 0
-  eTime: 10
-  nSpeed: 15
 --- !u!58 &7434513971568819740
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -308,6 +281,53 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 4.025
+--- !u!114 &4738495308152300643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2692601533222051583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4929b8637dc66b043b80826648b915b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  maxHealth: 10
+  currentHealth: 0
+  invincibleTime: 0.5
+  knockbackForce: 20
+  deathDelay: 0.3
+  knockbackDuration: 0.2
+  isDead: 0
+  isKnockedBack: 0
+  isInvincible: 0
+  barrier: {fileID: 5718324800508526959}
+  sword: {fileID: 3055331439791449503}
+  hPScript: {fileID: 0}
+  bspicked: 0
+  eTime: 10
+  nSpeed: 15
+--- !u!114 &769006460132032343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2692601533222051583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5ce6a8702239c4984fd87e6edbce09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 8178bed9f2df58040953750838ff8a6f, type: 3}
+  - {fileID: 8300000, guid: 68138fcea17b6be48946f1fe407fcfe4, type: 3}
+  - {fileID: 8300000, guid: 1f1285b6c530ee644ac19637265caaee, type: 3}
+  - {fileID: 8300000, guid: c9281bd850523e64a9c5d958aac89b3d, type: 3}
+  - {fileID: 8300000, guid: 179c78059032e8c48976058513750d86, type: 3}
+  source: {fileID: 0}
 --- !u!1 &3055331439791449503
 GameObject:
   m_ObjectHideFlags: 0
