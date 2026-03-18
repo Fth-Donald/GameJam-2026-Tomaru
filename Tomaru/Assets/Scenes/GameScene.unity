@@ -1749,14 +1749,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 1406275305561216138, guid: ff902fb6031cdd64aa76992c3592f565, type: 3}
-  - {fileID: 6518103126505757336, guid: 88f65220addfbc8499f87e2ba448977d, type: 3}
-  - {fileID: 1406275305561216138, guid: c6627820bb31c704fa01d6185fa8cbca, type: 3}
-  - {fileID: 391936884096150866, guid: 02287e0519dd39a44aa0d9d2b69abec7, type: 3}
   - {fileID: 4424019833144173239, guid: 15722d47995ea9c42b7563f9e9b975fe, type: 3}
   - {fileID: 8204255054960722899, guid: 0da42a7e41fe5a04c9ac06f3f8bed4c9, type: 3}
+  - {fileID: 391936884096150866, guid: 02287e0519dd39a44aa0d9d2b69abec7, type: 3}
+  - {fileID: 6518103126505757336, guid: 88f65220addfbc8499f87e2ba448977d, type: 3}
+  - {fileID: 1406275305561216138, guid: c6627820bb31c704fa01d6185fa8cbca, type: 3}
   - {fileID: 4207073115092477960, guid: 37aabebde27cdcb4b8dccd13c7e363b9, type: 3}
-  - {fileID: 2567639118810631646, guid: 2c7a3498cb1659c41804a3cf169b1db5, type: 3}
+  - {fileID: 7658457836418640199, guid: 43d6b3f1ba50fb140959aaaf2abf6187, type: 3}
   - {fileID: 7658457836418640199, guid: 43d6b3f1ba50fb140959aaaf2abf6187, type: 3}
   minSpawnRadius: 8
   maxSpawnRadius: 12
@@ -2155,6 +2154,7 @@ GameObject:
   - component: {fileID: 1362710039}
   - component: {fileID: 1362710042}
   - component: {fileID: 1362710041}
+  - component: {fileID: 1362710043}
   - component: {fileID: 1362710040}
   m_Layer: 5
   m_Name: HealthBarMask
@@ -2234,6 +2234,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!114 &1362710043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362710038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bbde0e814ede8642bde3b3b14035f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillImage: {fileID: 1704689316}
+  playerController: {fileID: 1581564297}
 --- !u!1 &1384370701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,6 +2613,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492744693}
   m_CullTransparentMesh: 0
+--- !u!114 &1581564297 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4738495308152300643, guid: 4eade72fec12a4547adc526be5a11cd5, type: 3}
+  m_PrefabInstance: {fileID: 332506669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4929b8637dc66b043b80826648b915b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1594810551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,7 +2983,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   e_S_Script: {fileID: 1165649127}
   waveTimerScript: {fileID: 90817304}
-  TargetKillCnt: 1
   WaveCnt: 1
   StoryLimit: 0
 --- !u!4 &1885223982

@@ -14,8 +14,8 @@ public class HPScript : MonoBehaviour
         cH = playerController.currentHealth;
         mH = playerController.maxHealth;
         fillImage.fillAmount = cH / mH;
-        Debug.Log(playerController.currentHealth);
-        Debug.Log(playerController.maxHealth);
+        Debug.Log("ph"+playerController.currentHealth);
+        Debug.Log("mh"+playerController.maxHealth);
     }
 }
 //
