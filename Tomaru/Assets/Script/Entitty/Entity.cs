@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Entity : MonoBehaviour
 {
@@ -96,4 +97,5 @@ public class Entity : MonoBehaviour
         isKnockedBack = false;
         knockbackCoroutine = null;
     }
+
 }
