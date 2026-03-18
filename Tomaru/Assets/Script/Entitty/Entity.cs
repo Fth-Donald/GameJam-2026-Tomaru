@@ -18,6 +18,7 @@ public class Entity : MonoBehaviour
     public bool isInvincible = false;
 
     protected Rigidbody2D rb;
+    public SfxPlayer sfx;
     private Coroutine knockbackCoroutine;
 
     protected virtual void Awake()
@@ -39,6 +40,7 @@ public class Entity : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            sfx.PlayRandom(0, 6);
         }
         else
         {
