@@ -214,6 +214,7 @@ MonoBehaviour:
   isDead: 0
   isKnockedBack: 0
   isInvincible: 0
+  sfx: {fileID: 0}
   contactDamage: 1
   wave: {fileID: 0}
 --- !u!114 &4159670603315347130
@@ -228,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed23ba0a07cc9654a95790676ed5be70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 2
   maxHealth: 10
   currentHealth: 0
   invincibleTime: 1
@@ -238,5 +239,6 @@ MonoBehaviour:
   isDead: 0
   isKnockedBack: 0
   isInvincible: 0
+  sfx: {fileID: 0}
   contactDamage: 1
   wave: {fileID: 0}

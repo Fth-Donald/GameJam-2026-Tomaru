@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class EnemyBullet : MonoBehaviour
 {
     [Header("Stats")]
     public int damage = 1;          // 造成傷害量
     public float lifetime = 3f;     // 子彈自動消失時間
+    public float hitDelay = 0.3f;   // 碰撞後延遲消失時間
+
+    bool isHit = false;             // 防止重複觸發
 
     void Awake()
     {
@@ -12,20 +16,29 @@ public class EnemyBullet : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        // 碰到 Player 造成傷害
-        if (other.CompareTag("Player"))
+        if (isHit) return;
+
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Entity entity = other.GetComponent<Entity>();
+            Entity entity = collision.gameObject.GetComponent<Entity>();
             entity.TakeDamage(damage, transform);
-            Destroy(gameObject);
+            isHit = true;
+            StartCoroutine(DestroyAfterDelay());
         }
 
-        // 碰到 Barrier 消失
-        if (other.CompareTag("Barrier"))
+        if (collision.gameObject.CompareTag("Barrier"))
         {
-            Destroy(gameObject);
+            isHit = true;
+            StartCoroutine(DestroyAfterDelay());
         }
+    }
+
+    IEnumerator DestroyAfterDelay()
+    {
+        // 讓玩家看到物理反彈效果
+        yield return new WaitForSeconds(hitDelay);
+        Destroy(gameObject);
     }
 }

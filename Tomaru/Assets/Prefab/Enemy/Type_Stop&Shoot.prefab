@@ -241,7 +241,7 @@ MonoBehaviour:
   isInvincible: 0
   contactDamage: 1
   wave: {fileID: 0}
-  stopRange: 5
+  stopRange: 10
 --- !u!114 &7404637724683119298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,4 +268,4 @@ MonoBehaviour:
   wave: {fileID: 0}
   bulletPrefab: {fileID: 1963537888770040043, guid: f4945444a2124d54eab790c67990e798, type: 3}
   shootInterval: 1.5
-  bulletSpeed: 6
+  bulletSpeed: 15
