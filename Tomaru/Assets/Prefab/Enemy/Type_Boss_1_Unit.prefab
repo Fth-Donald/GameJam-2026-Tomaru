@@ -10,11 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1957013100540970134}
   - component: {fileID: 7325029050151464523}
-  - component: {fileID: 6480560410841075588}
   - component: {fileID: 7567030300363457834}
   - component: {fileID: 4942761080684513403}
-  - component: {fileID: 2688010932307434341}
-  - component: {fileID: 83321920123290838}
+  - component: {fileID: 6480560410841075588}
   - component: {fileID: 192386052484303643}
   m_Layer: 6
   m_Name: Type_Boss_1_Unit
@@ -93,30 +91,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6480560410841075588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2567639118810631646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33f6eea18bd8b3c49b19f008a6bf5357, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  maxHealth: 5
-  currentHealth: 0
-  invincibleTime: 1
-  knockbackForce: 15
-  deathDelay: 0.3
-  knockbackDuration: 0.2
-  isDead: 0
-  isKnockedBack: 0
-  isInvincible: 0
-  contactDamage: 1
-  wave: {fileID: 0}
 --- !u!50 &7567030300363457834
 Rigidbody2D:
   serializedVersion: 5
@@ -180,7 +154,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.035495758, y: -0.010141432}
   m_Radius: 1.3434287
---- !u!114 &2688010932307434341
+--- !u!114 &6480560410841075588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,43 +166,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f6eea18bd8b3c49b19f008a6bf5357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  maxHealth: 5
-  currentHealth: 0
-  invincibleTime: 0
-  knockbackForce: 20
-  deathDelay: 0.3
-  knockbackDuration: 0.2
-  isDead: 0
-  isKnockedBack: 0
-  isInvincible: 0
-  contactDamage: 1
-  wave: {fileID: 0}
---- !u!114 &83321920123290838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2567639118810631646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e2a9b262ee915409a745e428066b3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   moveSpeed: 2
   maxHealth: 5
   currentHealth: 0
   invincibleTime: 1
-  knockbackForce: 6
+  knockbackForce: 15
   deathDelay: 0.3
   knockbackDuration: 0.2
   isDead: 0
   isKnockedBack: 0
   isInvincible: 0
+  sfx: {fileID: 0}
   contactDamage: 1
   wave: {fileID: 0}
   stopRange: 5
+  bulletPrefab: {fileID: 1963537888770040043, guid: a89ec8b35b3ef1242834c0ba67fbcebb, type: 3}
+  bulletSpeed: 6
+  shootInterval: 1.5
+  minRepositionTime: 1
+  maxRepositionTime: 4
+  orbitRadius: 5
 --- !u!114 &192386052484303643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,7 +193,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2567639118810631646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef098dc508ed6e74ebc82598449ebe9b, type: 3}
   m_Name: 
@@ -251,6 +208,7 @@ MonoBehaviour:
   isDead: 0
   isKnockedBack: 0
   isInvincible: 0
+  sfx: {fileID: 0}
   contactDamage: 1
   wave: {fileID: 0}
   bulletPrefab: {fileID: 1963537888770040043, guid: a89ec8b35b3ef1242834c0ba67fbcebb, type: 3}
