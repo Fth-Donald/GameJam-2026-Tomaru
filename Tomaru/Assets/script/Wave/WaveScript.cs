@@ -1,24 +1,26 @@
-ï»¿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class WaveScript : MonoBehaviour
 {
-   
+    [SerializeField] GameObject win;
+    public bool lastWave = false;
+
     public Enemy_Spawner e_S_Script;
     public WaveTimerScript waveTimerScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private int enemyNub;
-    //éœ€æ±‚å‡»æ€æ•°
+    //ù‹??”
     private int TargetKillCnt;
-    //å‡»æ€æ•°
+    //??”
     private int KillCnt=0;
-    //æ³¢æ¬¡æ•°
+    //”gŸ”
     public int WaveCnt=1;
-    //æ˜¯å¦åœ¨æ³¢æ¬¡ä¸­
+    //¥”Ûİ”gŸ’†
     bool IsWave=true;
-    //æ•…äº‹æ³¢æ¬¡ä¸Šé™
+    //ŒÌ–”gŸãŒÀ
     public int StoryLimit;
-    //æ³¢æ¬¡ä¸Šé™
+    //”gŸãŒÀ
     private int WaveLimit=10;
     List<GameObject> waveList = new List<GameObject>();
     List<GameObject> wave1List = new List<GameObject>();
@@ -33,7 +35,13 @@ public class WaveScript : MonoBehaviour
     {
         IsWave = false;
         WaveCnt++;
-        if (WaveCnt < WaveLimit)
+
+        if (lastWave == true)
+        {
+            win.SetActive(true);
+        }
+
+        else if (WaveCnt < WaveLimit)
             waveTimerScript.TimerStart();
         else
         {
@@ -108,6 +116,7 @@ public class WaveScript : MonoBehaviour
                 StartCoroutine(e_S_Script.SpawnEnemies(Boss1List.ToArray(), 1, 1f));
                 break;
             case 6:
+                lastWave = true;
                 waveList.Clear();
                 waveList.AddRange(wave6List);
                 enemyNub = 29;
@@ -125,12 +134,11 @@ public class WaveScript : MonoBehaviour
     public void OnEnemyKilled()
     {
         KillCnt++;
-        Debug.Log("å‡»æ€æ•°: ++");
+        Debug.Log("??”: ++");
         Debug.Log("KillCnt");
         if (KillCnt >= TargetKillCnt)
         {
             EndWave();
-           
         }
     }
 }
