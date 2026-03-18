@@ -141,7 +141,6 @@ GameObject:
   - component: {fileID: 7540729979867641514}
   - component: {fileID: 5626045212779587331}
   - component: {fileID: 5049327415346937222}
-  - component: {fileID: 8212246439910131746}
   - component: {fileID: 2452562266722910377}
   - component: {fileID: -1614515408420073462}
   m_Layer: 6
@@ -285,31 +284,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.12390137, y: 0.034179688}
   m_Radius: 1.7932129
---- !u!114 &8212246439910131746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8204255054960722899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a21a41cdc0ea8f44c9a2adeacd366e33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4
-  maxHealth: 5
-  currentHealth: 0
-  invincibleTime: 0
-  knockbackForce: 10
-  deathDelay: 0.3
-  knockbackDuration: 0.2
-  isDead: 0
-  isKnockedBack: 0
-  isInvincible: 0
-  sfx: {fileID: 0}
-  contactDamage: 1
-  wave: {fileID: 0}
 --- !u!114 &2452562266722910377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,6 +308,10 @@ MonoBehaviour:
   isInvincible: 0
   sfx: {fileID: -1614515408420073462}
   contactDamage: 1
+  dropPrefabs:
+  - {fileID: 1446378961865949023, guid: 21672d6f53fe6d943b4b18fd1142e2d1, type: 3}
+  - {fileID: 2861679137037555832, guid: eb3b05c8ee273474c8ef450fae6320e8, type: 3}
+  - {fileID: 2011701249469994355, guid: 35395268dd9805f44b8eb91e2225599f, type: 3}
   wave: {fileID: 0}
 --- !u!114 &-1614515408420073462
 MonoBehaviour:
