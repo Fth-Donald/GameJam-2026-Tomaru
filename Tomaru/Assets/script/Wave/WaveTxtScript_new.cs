@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class WaveTxtScript : MonoBehaviour
+public class WaveTxtScript_new : MonoBehaviour
 {
     public WaveScript waveScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
