@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1337049895570509201
 Transform:
   m_ObjectHideFlags: 0
@@ -257,10 +257,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  maxHealth: 5
+  maxHealth: 10
   currentHealth: 0
-  invincibleTime: 1
-  knockbackForce: 6
+  invincibleTime: 0.5
+  knockbackForce: 20
   deathDelay: 0.3
   knockbackDuration: 0.2
   isDead: 0
@@ -268,7 +268,10 @@ MonoBehaviour:
   isInvincible: 0
   barrier: {fileID: 5718324800508526959}
   sword: {fileID: 3055331439791449503}
-  healthBar: {fileID: 0}
+  hPScript: {fileID: 0}
+  bspicked: 0
+  eTime: 10
+  nSpeed: 15
 --- !u!58 &7434513971568819740
 CircleCollider2D:
   m_ObjectHideFlags: 0
