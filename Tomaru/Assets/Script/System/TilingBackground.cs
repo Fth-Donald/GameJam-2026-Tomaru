@@ -2,21 +2,41 @@ using UnityEngine;
 
 public class TilingBackground : MonoBehaviour
 {
-    Transform Cam;
+    [Header("Tile Size")]
+    public float tileWidth = 12.8f;
+    public float tileHeight = 7.2f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    Transform cam;
+    Vector3 lastCamPos;
+
     void Awake()
     {
-        Cam = Camera.main.transform;
+        cam = Camera.main.transform;
+        lastCamPos = cam.position;
+        // ‰ŽnˆÊ’u›”êŽÅ‹ß“I Tile ’†S
+        transform.position = new Vector3(
+            Mathf.Round(cam.position.x / tileWidth) * tileWidth,
+            Mathf.Round(cam.position.y / tileHeight) * tileHeight,
+            transform.position.z
+        );
     }
 
     void LateUpdate()
     {
-        // ”wŒiæîZCamera‘–CTile–ÍŽ®Ž©“®•ÝŸÞ,”wŒiæî’˜ Camera “I Tile ’†SêyˆÚ“®
-        transform.position=new Vector3(
-        Cam.position.x,
-        Cam.position.y,
-        transform.position.z
-        );
+        // Camera ˆÚ“®—¹‘½­
+        Vector3 delta = cam.position - lastCamPos;
+        lastCamPos = cam.position;
+
+        transform.position += delta;
+
+        // ’´oˆêŒÂ Tile úª“xA’µ‰ñ˜Ò
+        float offsetX = transform.position.x - cam.position.x;
+        float offsetY = transform.position.y - cam.position.y;
+
+        if (Mathf.Abs(offsetX) >= tileWidth)
+            transform.position -= new Vector3(Mathf.Sign(offsetX) * tileWidth, 0, 0);
+
+        if (Mathf.Abs(offsetY) >= tileHeight)
+            transform.position -= new Vector3(0, Mathf.Sign(offsetY) * tileHeight, 0);
     }
 }
