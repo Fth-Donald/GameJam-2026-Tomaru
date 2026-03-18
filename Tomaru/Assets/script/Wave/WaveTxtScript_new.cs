@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class WaveTxtScript : MonoBehaviour
+public class WaveTxtScript_new : MonoBehaviour
 {
     public WaveScript waveScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -61,8 +61,8 @@ public class WaveTxtScript : MonoBehaviour
         waveEnded = false;
         scale = 1f;
         timerText.gameObject.SetActive(true);
-        WaveTxtTimer = 1.5f;
-        timerText.text = "Wave" + waveScript.WaveCnt;
+        WaveTxtTimer = 2f;
+        timerText.text = "Wave " + waveScript.WaveCnt;
     }
     void UpdateWaveUI()
     {
