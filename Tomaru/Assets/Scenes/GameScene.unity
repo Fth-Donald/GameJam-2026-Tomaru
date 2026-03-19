@@ -2625,7 +2625,7 @@ MonoBehaviour:
   lastWave: 0
   e_S_Script: {fileID: 1165649127}
   waveTimerScript: {fileID: 90817304}
-  WaveCnt: 1
+  WaveCnt: 5
   StoryLimit: 0
 --- !u!4 &1885223982
 Transform:

@@ -118,7 +118,7 @@ public class WaveScript : MonoBehaviour
                 waveList.Clear();
                 waveList.AddRange(wave5List);
                 enemyNub = 29;
-                TargetKillCnt = enemyNub+1+5;
+                TargetKillCnt = enemyNub;
                 StartCoroutine(e_S_Script.SpawnEnemies(Boss1List.ToArray(), 1, 1f));
                 break;
             case 6:
@@ -134,14 +134,14 @@ public class WaveScript : MonoBehaviour
                 break;
         }
        
-        StartCoroutine(e_S_Script.SpawnEnemies(waveList.ToArray(), TargetKillCnt, 1f));
+        StartCoroutine(e_S_Script.SpawnEnemies(waveList.ToArray(), enemyNub, 1f));
     }
     
     public void OnEnemyKilled()
     {
         KillCnt++;
         Debug.Log("???h: ++");
-        Debug.Log("KillCnt");
+        Debug.Log("KillCnt"+ KillCnt);
         if (KillCnt >= TargetKillCnt)
         {
             EndWave();

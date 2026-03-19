@@ -107,8 +107,9 @@ public class Enemy_WatermelonSlice : Enemy_Base
     {
         if (isDead) return;
 
-        // 傷害回傳給 Boss
-        boss.TakeDamageFromSlice(damage, attacker);
+        // boss 還存在才通知
+        if (boss != null)
+            boss.TakeDamageFromSlice(damage, attacker);
 
         // 自己 HP 同步
         currentHealth -= damage;
@@ -121,8 +122,9 @@ public class Enemy_WatermelonSlice : Enemy_Base
     {
         isDead = true;
 
-        // 通知 Boss 自己死了
-        boss.OnSliceDied(this);
+        // boss 還存在才通知
+        if (boss != null)
+            boss.OnSliceDied(this);
 
         yield return new WaitForSeconds(deathDelay);
         Destroy(gameObject);
