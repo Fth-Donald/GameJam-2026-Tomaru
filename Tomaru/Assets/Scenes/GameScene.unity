@@ -484,7 +484,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 179c78059032e8c48976058513750d86, type: 3}
     - target: {fileID: 5776580837314826935, guid: 4eade72fec12a4547adc526be5a11cd5, type: 3}
       propertyPath: damage
-      value: 1000
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5858089941249025202, guid: 4eade72fec12a4547adc526be5a11cd5, type: 3}
       propertyPath: hPScript
@@ -2625,7 +2625,7 @@ MonoBehaviour:
   lastWave: 0
   e_S_Script: {fileID: 1165649127}
   waveTimerScript: {fileID: 90817304}
-  WaveCnt: 5
+  WaveCnt: 1
   StoryLimit: 0
 --- !u!4 &1885223982
 Transform:
